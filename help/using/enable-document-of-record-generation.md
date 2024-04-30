@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
-workflow-type: ht
-source-wordcount: '853'
-ht-degree: 100%
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ El DoR utiliza una plantilla básica para definir su diseño. Puede generar un d
 
 Para obtener más información sobre la generación de un DoR, consulte [Generar documento de registro para formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
-El [servicio de conversión automatizada de formularios](/help/using/introduction.md) convierte los siguientes formularios de origen en adaptables:
+El [Servicio de automated forms conversion (AFCS)](/help/using/introduction.md) convierte los siguientes formularios de origen en formularios adaptables:
 
 * Formularios PDF no interactivos
 * AcroForms
@@ -87,7 +87,7 @@ En este artículo se describen las rutas recomendadas para generar un DoR en fun
 
 ## Generación de un documento de registro para formularios PDF no interactivos {#generate-document-of-record-non-interactive-pdf}
 
-Si utiliza un formulario PDF no interactivo como formulario de origen para el servicio de conversión de formularios automatizados, puede hacer lo siguiente:
+Si utiliza un formulario de PDF no interactivo como formulario de origen para el servicio de Automated forms conversion (AFCS), puede:
 
 * Activar la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR con una plantilla predeterminada.
 * O bien, editar las propiedades del formulario adaptable después de la conversión para permitir la generación de un DoR mediante la plantilla de formulario predeterminada o cualquier otra plantilla de formulario.
@@ -121,7 +121,7 @@ Al enviar el formulario adaptable convertido, el DoR se genera automáticamente 
 
 ## Generación del documento de registro para formularios PDF basados en AcroForms o XFA {#generate-document-of-record-acroform-xfaform}
 
-Si usa un formulario PDF basado en AcroForm o XFA como formulario de origen para el servicio de Formularios de conversión automatizados, puede hacer lo siguiente:
+Si utiliza un formulario de Acro o un formulario de PDF basado en XFA como formulario de origen para el servicio de Automated forms conversion (AFCS), puede:
 
 * Permitir la generación de un DoR antes de la conversión de formulario adaptable que genere un DoR utilizando el formulario de origen como plantilla
 

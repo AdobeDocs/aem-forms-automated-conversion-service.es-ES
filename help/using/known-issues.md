@@ -1,6 +1,6 @@
 ---
 title: Problemas conocidos
-description: problemas conocidos y limitaciones del servicio de conversión automatizada de formularios
+description: Problemas y limitaciones conocidos del servicio de Automated forms conversion (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 43616abd46a17a8eeda30a116f09b88780ce9a77
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 96%
 
 ---
 
 # Problemas conocidos y limitaciones {#known-issues-limitations}
 
-Antes de empezar a utilizar el servicio de conversión automatizada de formularios de AEM Forms, revise los siguientes problemas conocidos y limitaciones:
+Antes de empezar a utilizar el servicio de Automated forms conversion de AEM Forms (AFCS), revise los siguientes problemas y limitaciones conocidos:
 
 ## Problemas conocidos {#known-issues}
 

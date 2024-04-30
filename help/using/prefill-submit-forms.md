@@ -1,6 +1,6 @@
 ---
 title: Flujos de trabajo de relleno automático recomendados y envío basados en fuentes de datos para formularios adaptables
-description: Flujos de trabajo de relleno automático y envío basados en fuentes de datos para formularios adaptables generados mediante el servicio de conversión automatizada de formularios.
+description: Flujos de trabajo de relleno y envío basados en fuentes de datos para formularios adaptables generados mediante el servicio de Automated forms conversion (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,16 +9,16 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
-workflow-type: ht
-source-wordcount: '2380'
-ht-degree: 100%
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+workflow-type: tm+mt
+source-wordcount: '2397'
+ht-degree: 84%
 
 ---
 
 # Flujos de trabajo de relleno automático recomendados y envío basados en fuentes de datos para formularios adaptables {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-Puede utilizar cualquiera de las siguientes fuentes de datos con formularios adaptables convertidos mediante el servicio de conversión automatizada de formularios:
+Puede utilizar cualquiera de las siguientes fuentes de datos con formularios adaptables convertidos mediante el servicio de Automated forms conversion (AFCS):
 
 * Modelo de datos de formulario, OData o cualquier otro servicio de terceros
 * Esquema JSON
@@ -37,12 +37,12 @@ En este artículo se describen los flujos de trabajo recomendados para rellenar 
   <tr> 
    <td><p>Modelo de datos de formulario, OData o cualquier otro servicio de terceros</p></td> 
    <td> 
-    <p><strong>Opción 1</strong>: se selecciona el modelo de datos de formulario, OData o cualquier otro servicio de terceros como fuente de datos. Puede <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> mediante el servicio de conversión automática de formularios. Los campos de formulario adaptables se vinculan manualmente a las entidades del modelo de datos de formulario y se utiliza la opción Servicio de relleno automático del modelo de datos de formulario para rellenar automáticamente los valores de los campos. Para enviar el formulario adaptable se utiliza la opción Enviar con el modelo de datos de formulario.</p></td> 
+    <p><strong>Opción 1</strong>: se selecciona el modelo de datos de formulario, OData o cualquier otro servicio de terceros como fuente de datos. Usted <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> mediante el servicio de Automated forms conversion (AFCS). Los campos de formulario adaptables se vinculan manualmente a las entidades del modelo de datos de formulario y se utiliza la opción Servicio de relleno automático del modelo de datos de formulario para rellenar automáticamente los valores de los campos. Para enviar el formulario adaptable se utiliza la opción Enviar con el modelo de datos de formulario.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>Opción 2</strong>: seleccione el modelo de datos de formulario, OData o cualquier otro servicio de terceros como fuente de datos. Puede <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> mediante el uso del servicio de conversión automática de formularios. Los campos de formulario adaptables se enlazan con el editor de reglas para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.</p>
+   <p><strong>Opción 2</strong>: seleccione el modelo de datos de formulario, OData o cualquier otro servicio de terceros como fuente de datos. Usted <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> mediante el servicio de Automated forms conversion (AFCS). Los campos de formulario adaptables se enlazan con el editor de reglas para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.</p>
     </td> 
   </tr>
   <tr> 
@@ -58,7 +58,7 @@ En este artículo se describen los flujos de trabajo recomendados para rellenar 
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Opción 1</strong>: para <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> mediante el uso del servicio de conversión automática de formularios y la configuración del esquema JSON como fuente de datos. Los campos de formulario adaptables se enlazan manualmente al esquema JSON y <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usar cualquiera de los protocolos admitidos</a> para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.</p></td> 
+    <p><strong>Opción 1</strong>: usted <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> usar el servicio de Automated forms conversion (AFCS) y configurar el esquema JSON como fuente de datos. Los campos de formulario adaptables se enlazan manualmente al esquema JSON y <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usar cualquiera de los protocolos admitidos</a> para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -68,7 +68,7 @@ En este artículo se describen los flujos de trabajo recomendados para rellenar 
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Opción 2</strong>: puede <a href="#generate-adaptive-forms-with-json-binding">generar un formulario adaptable con enlace de datos JSON</a> mediante el uso del servicio de conversión automática de formularios. El servicio de relleno automático y el envío de formularios funcionan sin problemas. No necesita ningún paso de configuración.</p> </td> 
+    <p><strong>Opción 2</strong>: usted <a href="#generate-adaptive-forms-with-json-binding">generar un formulario adaptable con enlace de datos JSON</a> mediante el servicio de Automated forms conversion (AFCS). El servicio de relleno automático y el envío de formularios funcionan sin problemas. No necesita ningún paso de configuración.</p> </td> 
   </tr>
    <tr>
   <td></td> 
@@ -78,7 +78,7 @@ En este artículo se describen los flujos de trabajo recomendados para rellenar 
   <tr>
   <td><p>Esquema XSD</p></td> 
    <td> 
-    <p>El esquema XSD se selecciona como fuente de datos. En función de la fuente de datos seleccionada, puede <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> mediante el uso del servicio de conversión automatizada de formularios y la configuración del esquema XSD como fuente de datos. Los campos de formulario adaptables se enlazan manualmente al esquema XSD y <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usar cualquiera de los protocolos admitidos</a> para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.</p>
+    <p>El esquema XSD se selecciona como fuente de datos. En función de la fuente de datos seleccionada, puede <a href="#generate-adaptive-forms-with-no-data-binding">generar un formulario adaptable sin enlace de datos</a> usar el servicio de Automated forms conversion (AFCS) y configurar el esquema XSD como fuente de datos. Los campos de formulario adaptables se enlazan manualmente al esquema XSD y <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">usar cualquiera de los protocolos admitidos</a> para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.</p>
     </td> 
   </tr>
   <tr>
@@ -91,7 +91,7 @@ En este artículo se describen los flujos de trabajo recomendados para rellenar 
 </table>
 
 
-Para obtener más información sobre el servicio de conversión automatizada de formulario, consulte los siguientes artículos:
+Para obtener más información sobre el servicio de Automated forms conversion (AFCS), consulte los siguientes artículos:
 
 * [Introducción al servicio de conversión automatizada de formularios](introduction.md)
 * [Configurar el servicio de conversión automatizada de formularios](configure-service.md)
@@ -103,7 +103,7 @@ La información proporcionada en este artículo se basa en la suposición de que
 ## Requisitos previos {#pre-requisites}
 
 * Configurar una [instancia de autor de AEM](https://helpx.adobe.com/es/experience-manager/6-5/sites/deploying/using/deploy.html).
-* Configurar el [servicio de conversión automatizada de formularios en la instancia de autor de AEM](configure-service.md).
+* Configurar [Servicio de automated forms conversion AEM (AFCS) en la instancia de autor de la](configure-service.md)
 
 ## Formulario adaptable de ejemplo {#sample-adaptive-form}
 
@@ -113,7 +113,7 @@ Formulario de solicitud de préstamo de ejemplo
 
 [Obtener archivo](assets/sample_loan_application_form.pdf)
 
-El archivo PDF sirve como entrada al servicio de conversión automatizada de formularios. El servicio convierte este archivo en un formulario adaptable. La siguiente imagen muestra la aplicación de un préstamo de ejemplo en formato PDF.
+El archivo del PDF sirve como entrada al servicio de Automated forms conversion (AFCS). El servicio convierte este archivo en un formulario adaptable. La siguiente imagen muestra la aplicación de un préstamo de ejemplo en formato PDF.
 
 ![formulario de solicitud de préstamo de ejemplo](assets/sample_form_new.png)
 
@@ -236,12 +236,12 @@ Después de generar un formulario adaptable sin enlace de datos, seleccione una 
 * [Esquema XSD](#xsddatasource)
 
 >[!NOTE]
-> Si el formulario adaptable que convierte mediante el servicio de conversión automatizada de formularios contiene varios campos con el mismo nombre, asegúrese de que dichos campos estén enlazados a entidades de la fuente de datos para evitar una posible pérdida de datos durante el envío.
+> Si el formulario adaptable que convierte mediante el servicio de Automated forms conversion (AFCS) contiene varios campos con el mismo nombre, asegúrese de que dichos campos estén enlazados a entidades de fuente de datos para evitar una posible pérdida de datos durante el envío.
 >
 
 ### Utilizar base de datos, OData o cualquier servicio de terceros como fuente de datos {#sqldatasource}
 
-Caso de uso: puede generar un formulario adaptable sin enlace de datos utilizando el servicio de conversión automatizada de formularios y configurar la base de datos MySQL como fuente de datos. Los campos de formulario adaptables se enlazan manualmente a las entidades del modelo de datos de formulario y se usa la opción **[!UICONTROL Form Data Model Prefill Service]** para rellenar automáticamente los valores de campo. Utilice la opción **[!UICONTROL Submit using Form Data Model]** para enviar el formulario adaptable.
+Caso de uso: se genera un formulario adaptable sin enlace de datos mediante el servicio de Automated forms conversion (AFCS) y se configura la base de datos MYSQL como fuente de datos. Los campos de formulario adaptables se enlazan manualmente a las entidades del modelo de datos de formulario y se usa la opción **[!UICONTROL Form Data Model Prefill Service]** para rellenar automáticamente los valores de campo. Utilice la opción **[!UICONTROL Submit using Form Data Model]** para enviar el formulario adaptable.
 
 Antes de ejecutar el caso de uso:
 
@@ -281,7 +281,7 @@ Siga estos pasos:
 1. Toque **[!UICONTROL Preview]** para ver los valores de campo de formulario adaptable rellenados previamente de forma automática.
 1. Modifique los valores de los campos si es necesario y envíe el formulario adaptable. Los valores de campo se envían a la base de datos MySQL. Puede actualizar la tabla **solicitante** para ver los valores actualizados de la tabla.
 
-**Caso de uso:** puede generar un formulario adaptable sin enlace de datos utilizando el Servicio de conversión automatizada de formularios y configurar la base de datos MySQL como la fuente de datos. Los campos de formulario adaptables se enlazan con el editor de reglas para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.
+**Caso de uso:** Puede generar un formulario adaptable sin enlace de datos mediante el servicio de Automated forms conversion (AFCS) y configurar la base de datos MYSQL como fuente de datos. Los campos de formulario adaptables se enlazan con el editor de reglas para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.
 
 Siga estos pasos para utilizar el [editor de reglas](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/rule-editor.html) para invocar el servicio del modelo de datos de formulario para enlazar campos y rellenar automáticamente los valores en un formulario adaptable.
 
@@ -323,7 +323,7 @@ Siga estos pasos para utilizar el [editor de reglas](https://helpx.adobe.com/es/
 
 ### Usar el esquema JSON como fuente de datos {#jsondatasource}
 
-**Caso de uso:** puede generar un formulario adaptable sin enlace de datos mediante el servicio de conversión automatizada de formularios y configurar el esquema JSON como fuente de datos. Los campos del formulario adaptable se enlazan manualmente al esquema JSON y se utiliza la opción **Vista previa con los datos** para rellenar automáticamente los valores del campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.
+**Caso de uso:** Puede generar un formulario adaptable sin enlace de datos mediante el servicio de Automated forms conversion (AFCS) y configurar el esquema JSON como fuente de datos. Los campos del formulario adaptable se enlazan manualmente al esquema JSON y se utiliza la opción **Vista previa con los datos** para rellenar automáticamente los valores del campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.
 
 Antes de ejecutar el caso de uso, asegúrese de lo siguiente:
 
@@ -351,7 +351,7 @@ Siga estos pasos:
 
 ### Utilizar el esquema XSD como fuente de datos {#xsddatasource}
 
-**Caso de uso:** puede generar un formulario adaptable sin enlace de datos utilizando el servicio de conversión automatizada de formularios y configurar el esquema XSD como fuente de datos. Los campos de formulario adaptables se enlazan manualmente al esquema XSD y se utiliza la variable **Vista previa con datos** para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.
+**Caso de uso:** Puede generar un formulario adaptable sin enlace de datos mediante el servicio de Automated forms conversion (AFCS) y configurar el esquema XSD como fuente de datos. Los campos de formulario adaptables se enlazan manualmente al esquema XSD y se utiliza la variable **Vista previa con datos** para rellenar automáticamente los valores de campo. Modifique los valores de los campos, si es necesario, y envíe datos al repositorio de crx.
 
 Antes de ejecutar el caso de uso, asegúrese de lo siguiente:
 
@@ -379,13 +379,13 @@ En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y pres
 
 ## Generación de formularios adaptables con enlace JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilice el [servicio de conversión automatizada de formularios para convertir](convert-existing-forms-to-adaptive-forms.md) el [formulario de solicitud de préstamo de ejemplo](#sample-adaptive-form) a un formulario adaptable con enlace de datos. Asegúrese de no seleccionar la casilla **[!UICONTROL Generate adaptive form(s) without data bindings]** para generar el formulario adaptable.
+Utilice el [Servicio de automated forms conversion (AFCS) para convertir](convert-existing-forms-to-adaptive-forms.md) el [formulario de solicitud de préstamo de ejemplo](#sample-adaptive-form) a un formulario adaptable con enlace de datos. Asegúrese de no seleccionar la casilla **[!UICONTROL Generate adaptive form(s) without data bindings]** para generar el formulario adaptable.
 
 ![Formulario adaptable con enlace JSON](assets/generate_af_with_data_bindings.png)
 
 ### Usar el esquema JSON como fuente de datos {#jsonwithdatabinding}
 
-**Caso de uso:** puede generar un formulario adaptable con enlace de datos JSON mediante el servicio de conversión automatizada de formularios. El servicio de relleno automático y el envío de formularios funcionan sin problemas. No necesita ningún paso de configuración.
+**Caso de uso:** Puede generar un formulario adaptable con enlace de datos JSON mediante el servicio de Automated forms conversion (AFCS). El servicio de relleno automático y el envío de formularios funcionan sin problemas. No necesita ningún paso de configuración.
 
 Antes de ejecutar el caso de uso, asegúrese de que tiene [un formulario adaptable con enlace de datos](#generate-adaptive-forms-with-json-binding).
 

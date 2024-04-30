@@ -1,28 +1,28 @@
 ---
 title: Conversión de formularios PDF a formularios adaptables
 seo-title: Convert PDF forms to adaptive forms
-description: Ejecución del servicio de conversión automatizada de formularios para transformar formularios PDF en formularios adaptables
-seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
+description: Ejecute el servicio de Automated forms conversion (AFCS) para convertir PDF forms en formularios adaptables
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: e752ff6fbdbc738b1d80a2621ffc972d6867f1eb
-workflow-type: ht
-source-wordcount: '1612'
-ht-degree: 100%
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+workflow-type: tm+mt
+source-wordcount: '1616'
+ht-degree: 94%
 
 ---
 
 # Conversión de formularios PDF a formularios adaptables {#convert-print-forms-to-adaptive-forms}
 
-El servicio de conversión automatizada de formularios de AEM Forms, con tecnología de Adobe Sensei, transforma automáticamente sus formularios PDF en formularios adaptables para dispositivos. Tanto si utiliza formularios PDF no interactivos, AcroForms o formularios PDF basados en XFA, el servicio de conversión automatizada de formularios puede transformarlos fácilmente en formularios adaptables. Para obtener información acerca de las capacidades, el flujo de trabajo de conversión y la información de incorporación, consulte el servicio de [conversión automatizada de formularios](introduction.md).
+El servicio de Automated forms conversion de AEM Forms (AFCS), con tecnología de Adobe Sensei, convierte automáticamente sus PDF forms en formularios adaptables y fáciles de usar en el dispositivo. Tanto si utiliza PDF forms no interactivos, Acro Forms o PDF forms basados en XFA, el servicio de Automated forms conversion de formularios (AFCS) puede convertir fácilmente estos formularios en formularios adaptables. Para obtener información acerca de las capacidades, el flujo de trabajo de conversión y la información de incorporación, consulte el servicio de [conversión automatizada de formularios](introduction.md).
 
 ## Requisitos previos {#pre-requisites}
 
 * [**Configuración del servicio de conversión**](configure-service.md)
 
-* **Prepare las [plantillas](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/template-editor.html) que se aplicarán a los formularios convertidos:** usar una plantilla permite aplicar la personalización de marca coherente a todos los formularios adaptables. Además, el servicio de conversión automatizada de formularios no extrae ni utiliza el encabezado y pie de página de los documentos PDF de origen. Puede utilizar plantillas de formulario adaptable para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la opción **[!UICONTROL Browse configurations]** para todas.
+* **Prepare las [plantillas](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/template-editor.html) que se aplicarán a los formularios convertidos:** usar una plantilla permite aplicar la personalización de marca coherente a todos los formularios adaptables. Además, el servicio de Automated forms conversion de documentos (AFCS) no extrae ni utiliza el encabezado y el pie de página de los documentos del PDF de origen. Puede utilizar plantillas de formulario adaptable para especificar el encabezado y el pie de página. El encabezado y el pie de página especificados en la plantilla se aplican al formulario adaptable durante la conversión. Cuando cree una carpeta para las plantillas, seleccione la opción **[!UICONTROL Browse configurations]** para todas.
 
 * **Prepare las [temáticas](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/themes.html) que se aplicarán a los formularios convertidos:** usarlas le permite asignar un estilo coherente a todos los formularios adaptables de su organización.
 
