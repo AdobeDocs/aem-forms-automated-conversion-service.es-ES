@@ -1,6 +1,6 @@
 ---
-title: Revisar y corregir formularios convertidos
-description: Revise y corrija los formularios adaptables convertidos por el servicio de Automated forms conversion de formularios (AFCS).
+title: Revisión y corrección de formularios convertidos
+description: Revise y corrija los formularios adaptables convertidos por el servicio de conversión automatizada de formularios (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Revisar y corregir formularios convertidos{#review-and-correct-converted-forms}
+# Revisión y corrección de formularios convertidos{#review-and-correct-converted-forms}
 
-El servicio de Automated forms conversion de AEM Forms (AFCS) identifica campos, contenido y presentación del documento del PDF de entrada y convierte el documento del PDF en un formulario adaptable. El formulario adaptable de salida puede tener algunos campos que faltan o que se han convertido incorrectamente. Puede utilizar el editor Revisar y corregir para realizar mejoras en los campos identificados y volver a generar el formulario adaptable para obtener un resultado más parecido a la experiencia deseada. Después de la primera conversión, puede abrir el documento PDF de entrada en el editor para lo siguiente:
+El servicio de conversión automatizada de formularios (AFCS) de AEM Forms identifica los campos, el contenido y el diseño del documento PDF de entrada y lo convierte en un formulario adaptable. El formulario adaptable de salida puede tener algunos campos que faltan o que se han convertido incorrectamente. Puede utilizar el editor Revisar y corregir para realizar mejoras en los campos identificados y volver a generar el formulario adaptable para obtener un resultado más parecido a la experiencia deseada. Después de la primera conversión, puede abrir el documento PDF de entrada en el editor para lo siguiente:
 
 * Ver todos los campos y contenidos identificados durante la conversión.
 * Identificar los campos y el contenido que se omiten durante la conversión.

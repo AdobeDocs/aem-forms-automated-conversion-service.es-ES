@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1506'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Integración del formulario adaptable con la base de datos mediante el flujo de trabajo de AEM {#submit-forms-to-database-using-forms-portal}
 
-El servicio de automated forms conversion (AFCS) le permite convertir un formulario de PDF no interactivo, un formulario de Acro o un formulario de PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
+El servicio de conversión automatizada de formularios (AFCS) le permite convertir un formulario PDF no interactivo, un formulario AcroForm o un formulario PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
 
 Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o JSON después de la conversión. Para el modelo de datos de formulario, es necesario enlazar manualmente los campos de formulario adaptables con el modelo de datos de formulario. Sin embargo, si genera un formulario adaptable con enlaces de datos, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos del formulario y enviarlo a la base de datos. Del mismo modo, tras una integración correcta con la base de datos, se pueden configurar los campos del formulario adaptable convertido para recuperar los valores de la base de datos y rellenar automáticamente los campos.
 
@@ -43,7 +43,7 @@ Puede descargar el formulario de contacto de ejemplo utilizando lo siguiente:
 
 [Obtener archivo](assets/sample_contact_us_form.pdf)
 
-El archivo del PDF sirve como entrada al servicio de Automated forms conversion (AFCS). El servicio convierte este archivo en un formulario adaptable. La siguiente imagen muestra el formulario de contacto en formato PDF.
+El archivo PDF sirve como entrada al servicio de conversión automatizada de formularios (AFCS). El servicio convierte este archivo en un formulario adaptable. La siguiente imagen muestra el formulario de contacto en formato PDF.
 
 ![ejemplo del formulario de solicitud de préstamo](assets/sample_contact_us_form.png)
 
@@ -184,7 +184,7 @@ Puede descargar el ejemplo del modelo de datos de formulario mediante lo siguien
 
 ## Generación de formularios adaptables con enlace JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilice el [Servicio de automated forms conversion (AFCS) para convertir](convert-existing-forms-to-adaptive-forms.md) el [Formulario de contacto](#sample-adaptive-form) a un formulario adaptable con enlace de datos. Asegúrese de no seleccionar la casilla **[!UICONTROL Generate adaptive form(s) without data bindings]** para generar el formulario adaptable.
+Utilice el [servicio de conversión automatizada de formularios (AFCS) para convertir](convert-existing-forms-to-adaptive-forms.md) el [formulario de contacto](#sample-adaptive-form) a uno adaptable con enlace de datos. Asegúrese de no seleccionar la casilla **[!UICONTROL Generate adaptive form(s) without data bindings]** para generar el formulario adaptable.
 
 ![Formulario adaptable con enlace JSON](assets/generate_af_with_data_bindings.png)
 

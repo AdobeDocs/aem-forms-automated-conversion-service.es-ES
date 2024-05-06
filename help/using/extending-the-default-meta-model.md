@@ -1,6 +1,6 @@
 ---
-title: Ampliar el metamodelo predeterminado
-description: Amplíe el metamodelo predeterminado para agregar patrones, validaciones y entidades específicas a su organización y aplique configuraciones a los campos de formulario adaptables mientras ejecuta el servicio de Automated forms conversion de formularios (AFCS).
+title: Ampliación del metamodelo predeterminado
+description: Amplíe el metamodelo predeterminado para añadir patrones, validaciones y entidades específicas de su organización, y aplique configuraciones a los campos de formularios adaptables mientras ejecuta el servicio de conversión automatizada de formularios (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2569'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Ampliar el metamodelo predeterminado {#extend-the-default-meta-model}
+# Ampliación del metamodelo predeterminado {#extend-the-default-meta-model}
 
-El servicio de automated forms conversion de formularios (AFCS) identifica y extrae objetos de formulario de los formularios de origen. El asignador semántico ayuda al servicio a decidir cómo se representan los objetos extraídos en un formulario adaptable. Por ejemplo, un formulario de origen puede tener muchos tipos de representaciones de una fecha. El asignador semántico asigna todas las representaciones de los objetos de formulario de fecha del formulario de origen con el componente de fecha de los formularios adaptables. El asignador semántico también permite que el servicio preconfigure y aplique validaciones, reglas, patrones de datos, texto de ayuda y propiedades de accesibilidad a los componentes de formulario adaptables durante la conversión.
+El servicio de conversión automatizada de formularios (AFCS) identifica y extrae objetos de los formularios de origen. El asignador semántico ayuda al servicio a decidir cómo se representan los objetos extraídos en un formulario adaptable. Por ejemplo, un formulario de origen puede tener muchos tipos de representaciones de una fecha. El asignador semántico asigna todas las representaciones de los objetos de formulario de fecha del formulario de origen con el componente de fecha de los formularios adaptables. El asignador semántico también permite que el servicio preconfigure y aplique validaciones, reglas, patrones de datos, texto de ayuda y propiedades de accesibilidad a los componentes de formulario adaptables durante la conversión.
 
 ![](assets/meta-model.gif)
 
@@ -25,7 +25,7 @@ El metamodelo es un esquema JSON. Antes de empezar con el metamodelo, asegúrese
 
 ## Metamomodelo predeterminado {#default-meta-model}
 
-El servicio de automated forms conversion (AFCS) tiene un metamodelo predeterminado. Es un esquema JSON y reside en Adobe Cloud con otros componentes del servicio de Automated forms conversion (AFCS). Puede encontrar una copia del metamodelo en el servidor de AEM local en: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. También puede [hacer clic aquí](assets/en.globalschema.json) para acceder o descargar el esquema del idioma inglés. El metamodelo para [francés](assets/fr.globalschema.json), [alemán](assets/de.globalschema.json) [español](assets/es.globalschema.json), [italiano](assets/it.globalschema.json) y [portugués](assets/pt_br.globalschema.json) también están disponibles para descargar.
+El servicio de conversión automatizada de formularios (AFCS) tiene un metamodelo predeterminado. Es un esquema JSON y reside en Adobe Cloud con otros componentes del servicio de conversión automatizada de formularios (AFCS). Puede encontrar una copia del metamodelo en el servidor de AEM local en: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. También puede [hacer clic aquí](assets/en.globalschema.json) para acceder o descargar el esquema del idioma inglés. El metamodelo para [francés](assets/fr.globalschema.json), [alemán](assets/de.globalschema.json) [español](assets/es.globalschema.json), [italiano](assets/it.globalschema.json) y [portugués](assets/pt_br.globalschema.json) también están disponibles para descargar.
 
 El esquema del metamodelo deriva de las entidades de esquema en https://schema.org/docs/schemas.html. Tiene las entidades Persona, DirecciónPostal, EmpresaLocal y otras más, tal y como se definen en https://schema.org. Cada entidad del metamodelo se adhiere al tipo de objeto de esquema JSON. El siguiente código representa una estructura del metamodelo de ejemplo:
 
@@ -120,7 +120,7 @@ En este ejemplo, el servicio de conversión busca las palabras clave tel., telé
 
 ### Propiedades del esquema JSON para campos de formulario adaptables generados {#jsonschemaproperties}
 
-El metamodelo admite las siguientes propiedades comunes del esquema JSON para los campos de formulario adaptable generados mediante el servicio de Automated forms conversion (AFCS):
+El metamodelo admite las siguientes propiedades comunes de esquema JSON para los campos de formularios adaptables generados mediante el servicio de conversión automatizada de formularios (AFCS).
 
 <table> 
  <tbody> 
@@ -164,7 +164,7 @@ El metamodelo admite las siguientes propiedades comunes del esquema JSON para lo
 
 ### Búsqueda basada en palabras clave para aplicar las propiedades a los campos de formulario adaptables generados {#keywordsearch}
 
-El servicio de automated forms conversion (AFCS) realiza una búsqueda de palabras clave en el formulario de origen durante la conversión. Después de filtrar los campos que cumplen los criterios de búsqueda, el servicio de conversión aplica las propiedades definidas para esos campos en el metamodelo a los campos de formulario adaptable generados.
+El servicio de conversión automatizada de formularios (AFCS) realiza una búsqueda de palabras clave en el formulario de origen durante la conversión. Después de filtrar los campos que cumplen los criterios de búsqueda, el servicio de conversión aplica las propiedades definidas para esos campos en el metamodelo a los campos de formulario adaptable generados.
 
 Se hace referencia a las palabras clave mediante la propiedad **aem:affKeyword**.
 
@@ -181,7 +181,7 @@ En este ejemplo, el servicio de conversión utiliza el texto dentro de **aem:aff
 
 ### Propiedades adicionales para los campos de formulario adaptables generados {#additionalproperties}
 
-Puede usar el complemento **aem:afProperties** en el metamodelo para definir las siguientes propiedades adicionales para los campos de formularios adaptables generados mediante el servicio de Automated forms conversion (AFCS):
+Puede usar la propiedad **aem:afProperties** en el metamodelo para definir las siguientes propiedades adicionales para los campos de formularios adaptables generados mediante el servicio de conversión automatizada de formularios (AFCS).
 
 <table> 
  <tbody> 
@@ -217,7 +217,7 @@ Puede usar el complemento **aem:afProperties** en el metamodelo para definir las
 
 ## Creación de un metamodelo personalizado en su propio idioma{#language-specific-meta-model}
 
-Puede crear un metamodelo específico de un idioma. Este metamodelo ayuda a crear reglas de asignación en el idioma que elija. El servicio de automated forms conversion (AFCS) le permite crear metamodelos en los siguientes idiomas:
+Puede crear un metamodelo específico de un idioma. Este metamodelo ayuda a crear reglas de asignación en el idioma que elija. El servicio de conversión automatizada de formularios (AFCS) le permite crear metamodelos en los siguientes idiomas:
 
 * Inglés (en)
 * Francés (fr)
@@ -258,9 +258,9 @@ La siguiente imagen muestra ejemplos del metamodelo en inglés y el metamodelo e
 
 ## Modificación de los campos de formulario adaptables utilizando un metamodelo personalizado {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Su organización puede tener otros patrones y validaciones, además de los que aparecen en el metamodelo predeterminado. Puede ampliar el metamodelo predeterminado para agregar patrones, validaciones y entidades específicas a su organización. El servicio de automated forms conversion (AFCS) aplica el metamodelo personalizado a los campos del formulario durante la conversión. Puede seguir actualizando el metamodelo a medida que aparecen nuevos patrones, validaciones y entidades específicas de su organización.
+Su organización puede tener otros patrones y validaciones, además de los que aparecen en el metamodelo predeterminado. Puede ampliar el metamodelo predeterminado para agregar patrones, validaciones y entidades específicas a su organización. El servicio de conversión automatizada de formularios (AFCS) aplica el metamodelo personalizado a los campos de formulario durante la conversión. Puede seguir actualizando el metamodelo a medida que aparecen nuevos patrones, validaciones y entidades específicas de su organización.
 
-El servicio de automated forms conversion (AFCS) utiliza un metamodelo predeterminado guardado en la siguiente ubicación para asignar campos de formulario de origen a los campos de formulario adaptables durante la conversión:
+El servicio de conversión automatizada de formularios (AFCS) utiliza un metamodelo predeterminado guardado en la siguiente ubicación para asignar campos de formulario de origen a los campos de formularios adaptables durante la conversión:
 
 http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 

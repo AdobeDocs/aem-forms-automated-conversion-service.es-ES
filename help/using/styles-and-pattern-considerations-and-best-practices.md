@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas y consideraciones
-description: Prácticas recomendadas y consideraciones para el servicio de Automated forms conversion (AFCS)
+description: Prácticas recomendadas y consideraciones acerca del servicio de conversión automatizada de formularios (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1229'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Prácticas recomendadas y patrones complejos conocidos {#Best-practices-and-considerations2}
 
-Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse el administrador de formularios, los autores y los desarrolladores al trabajar con [!DNL Automated Forms Conversion service] (AFCS). Se analizan las prácticas recomendadas, desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general y a los resultados de la [!DNL Automated Forms Conversion service] (AFCS).
+Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse los administradores, autores y desarrolladores de formularios al trabajar con el [!DNL Automated Forms Conversion service] (AFCS). Se analizan las prácticas recomendadas, desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general y al resultado del [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Prácticas recomendadas
 

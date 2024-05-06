@@ -9,20 +9,20 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1777'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Preguntas frecuentes{#frequently-asked-questions}
 
-1. **¿Qué versión de AEM Forms admite el servicio de Automated forms conversion (AFCS)?**
-   <p>El servicio de automated forms conversion (AFCS) es compatible con Forms AEM 6.4 y AEM 6.5, respectivamente, y con el servicio de soporte de Forms de la versión 6.4 y la versión 6.5 de. Funciona tanto con AEM Forms en OSGi como con AEM Forms en JEE. Para utilizar el servicio, necesita el último paquete de complementos de AEM Forms que se encuentra en la instancia de autor de AEM. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configurar el servicio de conversión automatizada de formularios</a>.</p> 
+1. **¿Qué versión de AEM Forms es compatible con el servicio de conversión automatizada de formularios (AFCS)?**
+   <p>El servicio de conversión automatizada de formularios (AFCS) es compatible con AEM 6.4 Forms y AEM 6.5 Forms. Funciona tanto con AEM Forms en OSGi como con AEM Forms en JEE. Para utilizar el servicio, necesita el último paquete de complementos de AEM Forms que se encuentra en la instancia de autor de AEM. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configurar el servicio de conversión automatizada de formularios</a>.</p> 
     <br>
 
 1. **¿Se puede instalar el servicio de forma local?**
-   <p>Adobe entrena los algoritmos de IA y ML del servicio de Automated forms conversion (AFCS) de forma regular con un nuevo conjunto de datos para mejorar la precisión de la conversión. Los algoritmos actualizados se implementan en el servicio de conversión que se ejecuta en Adobe Cloud periódicamente. Todos los clientes del servicio se benefician de los algoritmos actualizados. Por lo tanto, la implementación central alojada en la nube es más adecuada para el servicio de Automated forms conversion (AFCS) para aprender continuamente y ofrecer mejoras a todos los clientes.</p> 
+   <p>Adobe entrena los algoritmos de IA y ML del servicio de conversión automatizada de formularios (AFCS) de forma regular con nuevos datos para mejorar la precisión de la conversión. Los algoritmos actualizados se implementan en el servicio de conversión que se ejecuta en Adobe Cloud periódicamente. Todos los clientes del servicio se benefician de los algoritmos actualizados. Por lo tanto, la implementación central alojada en la nube es la más adecuada para que el servicio de conversión automatizada de formularios (AFCS) aprenda y ofrezca mejoras de forma continua a todos los clientes.</p> 
     <p>El servicio convierte los formularios en blanco en formularios adaptables. El servicio no es compatible con formularios rellenados ni con la extracción de datos de formularios rellenados. Elimine los datos de los formularios rellenados y elimine o incluya en la lista de permitidos la información de propiedad de los formularios antes de enviar los formularios al servicio para su conversión.</p> <br>
 
 1. **¿Es compatible el servicio con todos los formatos de formularios PDF? ¿Qué idiomas son compatibles?**
@@ -83,7 +83,7 @@ Los motivos más comunes para que la conversión falle son los siguientes:</p>
    <p>El servicio no convierte automáticamente los scripts de los formularios basados en XFA o en AcroForms a las correspondientes reglas de formularios adaptables. Los autores de formularios pueden usar el <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/rule-editor.html">Editor de reglas</a> para que el formulario adaptable sea interactivo.</p> <br>
 
 1. **Algunos objetos del formulario no se convierten correctamente en los componentes de formulario adaptables. ¿Cómo solucionar el problema?**
-   <p>El servicio de automated forms conversion (AFCS) está formado en un gran conjunto de formularios. Sin embargo, las aplicaciones basadas en IA/ML están limitadas por sus datos y patrones de capacitación. Puede haber múltiples tipos de campos, diseños, patrones y contexto perceptibles para las personas, pero difíciles de captar para el reconocimiento automatizado. Es posible que el servicio no identifique dichos objetos o que los reconozca incorrectamente. Puede usar el editor <a href="review-correct-ui-edited.md" target="_blank">Revisar y corregir</a> para realizar las modificaciones necesarias en la presentación del formulario de entrada basado en formularios impresos que ya posee.</p> <br/>
+   <p>El servicio de conversión automatizada de formularios (AFCS) se entrena con un amplio conjunto de formularios. Sin embargo, las aplicaciones basadas en IA/ML están limitadas por sus datos y patrones de capacitación. Puede haber múltiples tipos de campos, diseños, patrones y contexto perceptibles para las personas, pero difíciles de captar para el reconocimiento automatizado. Es posible que el servicio no identifique dichos objetos o que los reconozca incorrectamente. Puede usar el editor <a href="review-correct-ui-edited.md" target="_blank">Revisar y corregir</a> para realizar las modificaciones necesarias en la presentación del formulario de entrada basado en formularios impresos que ya posee.</p> <br/>
 
 1. **Algunas de las correcciones se repiten en el resto de los formularios. ¿Puede el servicio identificar y corregir todas estas instancias en conversiones futuras?**
 
@@ -114,8 +114,8 @@ El error mencionado se produce cuando la delegación de arranque no está config
 1. **¿Cómo se cambia automáticamente el formato de mayúsculas y minúsculas del texto del formulario adaptable?**
    <p>Se puede utilizar el editor de temáticas o estilos del formulario adaptable para cambiar el formato del campo de un formulario adaptable. Por ejemplo, puede abrir el editor de temáticas y establecer el valor de la propiedad de formato de todo el texto del formulario en mayúsculas, minúsculas o camel Case. También puede utilizar la opción sustitución de CSS en el editor de temáticas para crear distintos tipos de estilos.</p>
 
-1. **¿Puedo utilizar etiquetas de texto de Adobe Sign con el servicio de Automated forms conversion (AFCS)?**
-   <p> Cuando se utiliza el servicio de Automated forms conversion (AFCS) para convertir un formulario de PDF en un formulario adaptable y el formulario de PDF tiene etiquetas de texto de Adobe Sign, estas se convierten en los campos de formulario adaptables correspondientes y los detalles del firmante se rellenan automáticamente.  La función solo está disponible para AcroForms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
+1. **¿Puedo utilizar las etiquetas de texto de Adobe Sign con el servicio de conversión automatizada de formularios (AFCS)?**
+   <p> Cuando se utiliza el servicio de conversión automatizada de formularios (AFCS) para convertir un formulario PDF en uno adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles de la persona que firma se rellenan automáticamente. La función solo está disponible para AcroForms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
 
 1. **¿Cómo se crea un formulario de PDF habilitado para Adobe Sign?**
    </p>Para crear un formulario de PDF habilitado para Adobe Sign, haga lo siguiente:</p>

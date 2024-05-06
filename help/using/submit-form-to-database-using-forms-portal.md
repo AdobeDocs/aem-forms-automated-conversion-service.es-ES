@@ -1,20 +1,20 @@
 ---
 title: Envío de formularios adaptables a la base de datos mediante el Portal de formularios
-description: Amplíe el metamodelo predeterminado para agregar patrones, validaciones y entidades específicas a su organización y aplique configuraciones a los campos de formulario adaptables mientras ejecuta el servicio de Automated forms conversion de formularios (AFCS).
+description: Amplíe el metamodelo predeterminado para añadir patrones, validaciones y entidades específicas de su organización, y aplique configuraciones a los campos de formularios adaptables mientras ejecuta el servicio de conversión automatizada de formularios (AFCS).
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1159'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Integración de formularios adaptables con la base de datos mediante el Portal de formularios {#submit-forms-to-database-using-forms-portal}
 
-El servicio de automated forms conversion (AFCS) le permite convertir un formulario de PDF no interactivo, un formulario de Acro o un formulario de PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
+El servicio de conversión automatizada de formularios (AFCS) le permite convertir un formulario PDF no interactivo, un formulario AcroForm o un formulario PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
 
 Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o JSON después de la conversión. Sin embargo, si crea un formulario adaptable con enlaces de datos, el servicio de conversión lo asocia automáticamente con un esquema JSON y origina un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos y enviarlo a la base de datos mediante el Portal de formularios.
 
@@ -31,7 +31,7 @@ El ejemplo que se analiza en este artículo es una implementación de referencia
 * Configuración de una instancia de autor de AEM 6.4 o 6.5
 * Instalar el [Service pack más reciente](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) para la instancia de AEM
 * Última versión del paquete de complementos de AEM Forms
-* Configurar [Servicio de automated forms conversion (AFCS)](configure-service.md)
+* Configurar el [servicio de conversión automatizada de formularios (AFCS)](configure-service.md)
 * Configure una base de datos. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar el formulario adaptable convertido con cualquier base de datos de su elección.
 
 ## Configuración de la conexión entre la instancia de AEM y la base de datos {#set-up-connection-aem-instance-database}
