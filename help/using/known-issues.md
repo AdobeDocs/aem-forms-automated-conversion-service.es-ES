@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '821'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,5 +81,5 @@ Antes de empezar a utilizar el servicio de conversión automatizada de formulari
 * La información codificada con colores en el formulario PDF de origen no se transfiere al formulario adaptable.
 * Los colores del formulario PDF de origen no se transfieren a las temáticas de formulario adaptable.
 * Los formularios PDF en color se tratan como formularios en escala de grises y los campos se detectan en consecuencia.
-* Las propiedades como el enlace de datos o el esquema del modelo de datos no están disponibles para los formularios adaptables basados en componentes principales.
-* Revisar y corregir los formularios convertidos no está disponible para los formularios basados en componentes principales.
+* Las propiedades como el enlace de datos o el esquema del modelo de datos no están disponibles para el formulario adaptable basado en componentes principales.
+* Revisar y corregir los formularios convertidos no está disponible para el formulario basado en componentes principales.
