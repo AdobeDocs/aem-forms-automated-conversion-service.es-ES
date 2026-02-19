@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: fbfbb35889b788ce82f5e25a957d86d3b6d7edf7
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2504'
 ht-degree: 83%
 
 ---
@@ -66,8 +66,6 @@ El servicio de conversión automatizada de formularios (AFCS) se ejecuta en la i
 
    * Si es socio de Adobe, use el [Programa de formación para socios de Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5 o AEM 6.5 LTS.
 
-   * Si es socio de Adobe, utilice el [Programa de formación para socios de Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
-
 * Si utiliza AEM Forms as a Cloud Service, consulte Incorporación a [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=es#setup-environment) y la [configuración de un entorno de desarrollo local](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=es#setup-environment).
 
 
@@ -77,12 +75,7 @@ Descargue e instale el Service Pack de AEM más reciente. Para obtener instrucci
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de complementos de AEM Forms  {#downloadaemformsaddon}
 
-
-
-### &#x200B;3. (Solo para AEM 6.5) Descarga e instalación del paquete de complementos de AEM Forms  {#downloadaemformsaddon}
-
 La instancia de AEM contiene funciones básicas para los formularios. El servicio de conversión requiere todas las funciones de AEM Forms. Descargue e instale el paquete de complementos de AEM Forms para disponer de todas las funcionalidades de AEM Forms. El paquete es necesario para configurar y ejecutar el servicio de conversión. Para obtener instrucciones detalladas, consulte [Instalación y configuración de las funcionalidades de captura de datos.](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
-https://adminconsole.adobe.com/
 >[!NOTE]
 > Asegúrese de realizar las configuraciones obligatorias posteriores a la instalación después de instalar el paquete de complementos.
 >
@@ -92,7 +85,7 @@ https://adminconsole.adobe.com/
 The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
 
 
-### &#x200B;4. Creación de temas y plantillas personalizadas {#referencepackage}
+### Creación de temas y plantillas personalizadas {#referencepackage}
 
 **AEM Forms as a Cloud Service:** Puede usar las plantillas predeterminadas o crear plantillas personalizadas y apuntarles [configuración del servicio](#configure-the-cloud-service).
 
@@ -148,7 +141,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). -->
 
 ### Adición de usuarios a grupos de usuarios de los formularios {#adduserstousergroup}
 
@@ -257,7 +250,7 @@ Inicie sesión en la instancia de autor para crear las configuraciones de IMS de
 
    Cuando la conexión se realiza correctamente, aparece el mensaje *Token recuperado correctamente*.
 
-   ![Cuando la conexión se realiza correctamente, aparece el mensaje Token recuperado correctamente. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Cuando la conexión se realiza correctamente, aparece el mensaje Token recuperado correctamente. ](/help/using/assets/healthy-dialog.png)
 
 1. Haga clic en **Cerrar**.
 
