@@ -71,7 +71,7 @@ Después de cargar los formularios y configurar el servicio, siga estos pasos pa
 
    La configuración de la conversión anterior es necesaria para convertir formularios PDF en formularios basados en componentes de base. Para convertir un formulario de PDF en un formulario adaptable basado en componentes principales:
 
-   1. Asegúrese de haber habilitado [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction) en su instancia de AEM Forms. Si no están habilitados, puede [habilitar los componentes principales en su entorno de AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) o de [ as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
+   1. Asegúrese de haber habilitado [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction) en su instancia de AEM Forms. Si no están habilitados, puede [habilitar los componentes principales en su entorno de AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) o de [&#x200B; as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
    1. Seleccione una [plantilla de formulario adaptable basada en componentes principales y un tema](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) tal como se muestra en la siguiente imagen:
       ![Seleccione una plantilla de formulario adaptable](assets/select-af-template-1.png). 
    1. Pulse **[!UICONTROL Start Conversion]** para convertir el PDF en un formulario basado en componentes principales.
@@ -128,7 +128,7 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
    >[!NOTE]
    >
    >
-   > * Solo puede usar las opciones **[!UICONTROL  Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** a la vez. No puede utilizar ambas opciones simultáneamente.
+   > * Solo puede usar las opciones **[!UICONTROL &#x200B; Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** a la vez. No puede utilizar ambas opciones simultáneamente.
    > * Puede usar la opción **[!UICONTROL Use existing adaptive form fragments]** solo con formularios PDF no interactivos. Otros tipos de formulario aún no son compatibles.
    > * Solo puede utilizar fragmentos independientes o enlazados a un esquema JSON con el servicio de conversión automatizada. No utilice fragmentos XFA. Los fragmentos XFA no son compatibles.
    >

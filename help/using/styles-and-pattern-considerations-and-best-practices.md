@@ -82,7 +82,7 @@ Al comienzo, el servicio identifica y asigna los campos o paneles correctos a es
 
 | Patrón | Resolución |
 |--- |--- |
-| **Patrón** <br> Las opciones del grupo de elección con formas distintas de recuadros o círculos no se convierten en los componentes correspondientes al formulario adaptable. <br><br>**Resolución** <br> Cambie las formas de las opciones de elección a recuadros o círculos o utilice el editor Revisar y corregir para identificarlas. | ![Campos de elección ](assets/best-practice-choice-group-options.png) |
+| **Patrón** <br> Las opciones del grupo de elección con formas distintas de recuadros o círculos no se convierten en los componentes correspondientes al formulario adaptable. <br><br>**Resolución** <br> Cambie las formas de las opciones de elección a recuadros o círculos o utilice el editor Revisar y corregir para identificarlas. | ![Campos de elección &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### Campos del formulario {#form-fields}
 
