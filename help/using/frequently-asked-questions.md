@@ -8,7 +8,7 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 96%
@@ -101,7 +101,7 @@ El servicio solo admite formularios vacíos o sin rellenar. No cargue formulario
    <p>La cantidad de tiempo depende del tamaño y la complejidad de los formularios de entrada y del número de solicitudes. El servicio pretende reducir significativamente el tiempo de respuesta al valor, convirtiendo a los formularios PDF en formularios adaptables a un ritmo mucho más rápido, en comparación con el proceso manual de conversión de formularios. </p> <br />
 
 1. **¿Qué debo hacer si encuentro un error relacionado con las bibliotecas RSA? El mensaje de error es similar al mensaje que se menciona a continuación:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 El error mencionado se produce cuando la delegación de arranque no está configurada para las bibliotecas RSA/BouncyCastle. Siga estos pasos para resolver el problema:
    <p> </p>
 
@@ -121,3 +121,4 @@ El error mencionado se produce cuando la delegación de arranque no está config
    </p>Para crear un formulario de PDF habilitado para Adobe Sign, haga lo siguiente:</p>
 
    Agregue [etiquetas de texto de Adobe Sign](https://helpx.adobe.com/es/sign/using/text-tag.html) para los nombres de campo o use la opción [Convertir en formulario de Adobe Sign](https://helpx.adobe.com/es/sign/using/create-forms-with-acrobat.html).
+

@@ -8,18 +8,18 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 99%
+source-wordcount: '1507'
+ht-degree: 96%
 
 ---
 
 # Integración del formulario adaptable con la base de datos mediante el flujo de trabajo de AEM {#submit-forms-to-database-using-forms-portal}
 
-El servicio de conversión automatizada de formularios (AFCS) le permite convertir un formulario PDF no interactivo, un formulario AcroForm o un formulario PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
+El servicio de conversión automatizada de formularios (AFCS) le permite convertir un formulario de PDF no interactivo, un formulario de Acro o un formulario de PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
 
-Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o JSON después de la conversión. Para el modelo de datos de formulario, es necesario enlazar manualmente los campos de formulario adaptables con el modelo de datos de formulario. Sin embargo, si genera un formulario adaptable con enlaces de datos, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos del formulario y enviarlo a la base de datos. Del mismo modo, tras una integración correcta con la base de datos, se pueden configurar los campos del formulario adaptable convertido para recuperar los valores de la base de datos y rellenar automáticamente los campos.
+Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o JSON después de la conversión. Para el modelo de datos de formulario, debe enlazar manualmente los campos de formulario adaptables con el modelo de datos de formulario. Sin embargo, si genera un formulario adaptable con enlaces de datos, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos del formulario y enviarlo a la base de datos. Del mismo modo, tras una integración correcta con la base de datos, se pueden configurar los campos del formulario adaptable convertido para recuperar los valores de la base de datos y rellenar automáticamente los campos.
 
 La siguiente figura muestra las distintas etapas de integración de un formulario adaptable convertido con una base de datos:
 
@@ -276,3 +276,4 @@ Ejecute los siguientes pasos para configurar el formulario adaptable para rellen
 Puede descargar el ejemplo de formulario adaptable convertido utilizando lo siguiente:
 
 [Obtener archivo](assets/DownloadedFormsPackage_1498226829041200.zip)
+

@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 88%
+source-wordcount: '503'
+ht-degree: 86%
 
 ---
 
 # Notas de la versión
 
-El Servicio de conversión automatizada de formularios es objeto de mejoras continuas. Para estar al día de los desarrollos más recientes, visite esta página regularmente. Esta página le proporciona información sobre:
+El Servicio de conversión automatizada de formularios es objeto de mejoras continuas. Para estar al día de los últimos desarrollos, visite esta página regularmente. Esta página le proporciona información sobre:
 
 * Acceso temprano
 * Últimas versiones
@@ -89,3 +89,4 @@ El servicio ahora es más eficiente en la detección de listas numeradas y con v
 Se necesita el paquete del conector 1.1.38 o posterior para utilizar las últimas funciones y mejoras de la versión AFC-2020.03.1.
 
 Si ya tiene un entorno de servicio de conversión automatizada de formularios (AEM 6.5 o AEM 6.5 LTS) en funcionamiento, para utilizar las últimas funciones del servicio de conversión, instale el último paquete de servicio, el último paquete de complemento de AEM Forms y el último paquete del conector en el orden mencionado. Para AEM Forms as a Cloud Service, las actualizaciones se entregan automáticamente. Para obtener instrucciones detalladas al respeto, consulte el artículo [Configurar el servicio de conversión automatizada de formularios](configure-service.md).
+

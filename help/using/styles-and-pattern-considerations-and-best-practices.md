@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
 # Prácticas recomendadas y patrones complejos conocidos {#Best-practices-and-considerations2}
 
-Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse los administradores, autores y desarrolladores de formularios al trabajar con el [!DNL Automated Forms Conversion service] (AFCS). Se analizan las prácticas recomendadas, desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general y al resultado del [!DNL Automated Forms Conversion service] (AFCS).
+Este documento proporciona directrices y recomendaciones de las que pueden beneficiarse los administradores de formularios, los autores y los desarrolladores al trabajar con [!DNL Automated Forms Conversion service] (AFCS). Se analizan las prácticas recomendadas, desde la preparación de formularios de origen hasta la corrección de patrones complejos que requieren un esfuerzo adicional para la conversión automatizada. Estas prácticas recomendadas contribuyen colectivamente al rendimiento general y al resultado del [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Prácticas recomendadas
 
@@ -82,7 +82,7 @@ Al comienzo, el servicio identifica y asigna los campos o paneles correctos a es
 
 | Patrón | Resolución |
 |--- |--- |
-| **Patrón** <br> Las opciones del grupo de elección con formas distintas de recuadros o círculos no se convierten en los componentes correspondientes al formulario adaptable. <br><br>**Resolución** <br> Cambie las formas de las opciones de elección a recuadros o círculos o utilice el editor Revisar y corregir para identificarlas. | ![Campos de elección &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Patrón** <br> Las opciones del grupo de elección con formas distintas de recuadros o círculos no se convierten en los componentes correspondientes al formulario adaptable. <br><br>**Resolución** <br> Cambie las formas de las opciones de elección a recuadros o círculos o utilice el editor Revisar y corregir para identificarlas. | ![Campos de elección ](assets/best-practice-choice-group-options.png) |
 
 ### Campos del formulario {#form-fields}
 
@@ -121,3 +121,4 @@ Comment Type: draft
 <li>Choice groups with only box or circle shaped selectors are supported. </li>
 </ul>
 -->
+

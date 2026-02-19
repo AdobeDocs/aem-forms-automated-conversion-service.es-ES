@@ -4,17 +4,17 @@ description: Amplíe el metamodelo predeterminado para añadir patrones, validac
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 99%
+source-wordcount: '1159'
+ht-degree: 95%
 
 ---
 
 
 # Integración de formularios adaptables con la base de datos mediante el Portal de formularios {#submit-forms-to-database-using-forms-portal}
 
-El servicio de conversión automatizada de formularios (AFCS) le permite convertir un formulario PDF no interactivo, un formulario AcroForm o un formulario PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
+El servicio de conversión automatizada de formularios (AFCS) le permite convertir un formulario de PDF no interactivo, un formulario de Acro o un formulario de PDF basado en XFA en un formulario adaptable. Al iniciar el proceso de conversión, tiene la opción de generar un formulario adaptable con o sin enlaces de datos.
 
 Si selecciona generar un formulario adaptable sin enlaces de datos, puede integrar el formulario adaptable convertido con un modelo de datos de formulario, un esquema XML o JSON después de la conversión. Sin embargo, si crea un formulario adaptable con enlaces de datos, el servicio de conversión lo asocia automáticamente con un esquema JSON y origina un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. A continuación, puede integrar el formulario adaptable con una base de datos de su elección, rellenar los datos y enviarlo a la base de datos mediante el Portal de formularios.
 
@@ -299,3 +299,4 @@ Realice los siguientes pasos para crear una página del Portal de formularios y 
 1. Inserte el componente **[!UICONTROL Drafts & Submissions]** en la página. En la página del Portal de formularios aparecen dos pestañas, **[!UICONTROL Draft Forms]** y **[!UICONTROL Submitted Forms]**. La pestaña **[!UICONTROL Draft Forms]** también muestra el formulario adaptable convertido generado mediante los pasos mencionados en [Configuración del formulario adaptable convertido para la integración del Portal de formularios](#configure-converted-adaptive-form-for-forms-portal-integration)
 
 1. Toque **[!UICONTROL Preview]** y el formulario adaptable convertido, especifique valores para los campos de formulario adaptable y envíelo. Los valores especificados para los campos de formulario adaptable se envían a la base de datos integrada.
+

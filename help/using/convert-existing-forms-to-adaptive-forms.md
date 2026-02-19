@@ -7,16 +7,16 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 6ec2a2afbbf0e70c1101e365094881c7a8959a0a
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1794'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
 # Conversión de formularios PDF a formularios adaptables {#convert-print-forms-to-adaptive-forms}
 
-El servicio de conversión automatizada de formularios (AFCS) de AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente sus formularios PDF en formularios fáciles de usar y adaptables<!--foundation and [core components](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Tanto si utiliza formularios PDF no interactivos, AcroForms como formularios PDF basados en XFA, el servicio de conversión automatizada de formularios (AFCS) puede transformarlos fácilmente en formularios adaptables. Para obtener información acerca de las capacidades, el flujo de trabajo de conversión y la información de incorporación, consulte el servicio de [conversión automatizada de formularios](introduction.md).
+El servicio de conversión automatizada de formularios (AFCS) de AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente sus formularios PDF en formularios fáciles de usar y adaptables<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Tanto si utiliza formularios PDF no interactivos, AcroForms como formularios PDF basados en XFA, el servicio de conversión automatizada de formularios (AFCS) puede transformarlos fácilmente en formularios adaptables. Para obtener información sobre las funcionalidades, el flujo de trabajo de conversión y la información de incorporación, consulte el servicio [Conversión automatizada de formularios](introduction.md).
 
 ## Requisitos previos {#pre-requisites}
 
@@ -113,7 +113,7 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
    >[!NOTE]
    >
    >
-   > * Solo puede usar las opciones **[!UICONTROL &#x200B; Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** a la vez. No puede utilizar ambas opciones simultáneamente.
+   > * Solo puede usar las opciones **[!UICONTROL  Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** a la vez. No puede utilizar ambas opciones simultáneamente.
    > * Puede usar la opción **[!UICONTROL Use existing adaptive form fragments]** solo con formularios PDF no interactivos. Otros tipos de formulario aún no son compatibles.
    > * Solo puede utilizar fragmentos independientes o enlazados a un esquema JSON con el servicio de conversión automatizada. No utilice fragmentos XFA. Los fragmentos XFA no son compatibles.
    >
@@ -173,3 +173,4 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
 ## Revisión y corrección de formularios convertidos {#review-and-correct-the-converted-forms}
 
 Los formularios del mundo real tienen requisitos complejos de captura de datos. Una vez completada la conversión automatizada, los clientes pueden revisar la calidad de conversión del formulario y realizar las actualizaciones necesarias en él. AEM Forms proporciona el editor [Revisar y corregir](review-correct-ui-edited.md) para realizar los cambios necesarios. Permite mejorar la identificación automatizada de los campos de formulario y convertir los campos identificados de un tipo a otro. Por ejemplo, puede ayudar a identificar la presentación en dos columnas de un formulario y cambiar un campo identificado automáticamente como botón de opción por un campo de opciones múltiples.
+
