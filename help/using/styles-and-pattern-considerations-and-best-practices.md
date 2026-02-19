@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 100%
+source-wordcount: '1291'
+ht-degree: 95%
 
 ---
 
@@ -46,7 +46,9 @@ Cuando utilice un formulario XDP de origen para la conversión, siga estos pasos
 
 ### Antes de iniciar la conversión
 
-* Cree plantillas para el formulario adaptable. Estas especifican una estructura uniforme para los formularios de su organización o departamento.
+* **AEM Forms as a Cloud Service:** Hay disponibles temáticas y plantillas predeterminadas; puede utilizarlas o crear temáticas y plantillas personalizadas.
+* **AEM 6.5 y AEM 6.5 LTS:** Cree plantillas de formularios adaptables y temáticas (o instale recursos de referencia como se describe en [Configurar el servicio](configure-service.md#referencepackage)). Debe habilitar [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea utilizar plantillas y temáticas basadas en componentes principales.
+* Cree plantillas de formulario adaptable. Estas especifican una estructura uniforme para los formularios de su organización o departamento.
 * Especifique el encabezado y el pie de página en las plantillas de formulario adaptable. El servicio ignora el encabezado y el pie de página de los documentos de origen y utiliza los especificados en la plantilla de formulario adaptable.
 * Cree temáticas de formulario adaptable. Las temáticas proporcionan una apariencia uniforme a los formularios de su organización o departamento.
 * Configure el modelo de datos de formulario para que puedan guardarse y recuperarse desde una fuente de datos. Cree y configure servicios de lectura y escritura para el modelo de datos de formulario.

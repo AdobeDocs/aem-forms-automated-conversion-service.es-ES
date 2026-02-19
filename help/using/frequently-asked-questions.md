@@ -8,17 +8,17 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 100%
+source-wordcount: '1806'
+ht-degree: 96%
 
 ---
 
 # Preguntas frecuentes{#frequently-asked-questions}
 
 1. **¿Qué versión de AEM Forms es compatible con el servicio de conversión automatizada de formularios (AFCS)?**
-   <p>El servicio de conversión automatizada de formularios (AFCS) es compatible con AEM 6.4 Forms y AEM 6.5 Forms. Funciona tanto con AEM Forms en OSGi como con AEM Forms en JEE. Para utilizar el servicio, necesita el último paquete de complementos de AEM Forms que se encuentra en la instancia de autor de AEM. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configurar el servicio de conversión automatizada de formularios</a>.</p> 
+   <p>El servicio de conversión automatizada de formularios (AFCS) es compatible con AEM 6.5 Forms, AEM 6.5 LTS Forms y AEM Forms as a Cloud Service. Funciona tanto con AEM Forms en OSGi como con AEM Forms en JEE. Para AEM 6.5 y AEM 6.5 LTS, necesita el paquete de complementos más reciente de AEM Forms sobre la instancia de autor de AEM y debe <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es">habilitar los componentes principales de los formularios adaptables</a> si desea utilizar plantillas y temáticas basadas en los componentes principales. Para obtener instrucciones detalladas, consulte <a href="configure-service.md">Configurar el servicio de conversión automatizada de formularios</a>.</p> 
     <br>
 
 1. **¿Se puede instalar el servicio de forma local?**
@@ -27,12 +27,12 @@ ht-degree: 100%
 
 1. **¿Es compatible el servicio con todos los formatos de formularios PDF? ¿Qué idiomas son compatibles?**
    <p>El servicio puede convertir formularios PDF no interactivos, formularios XDP y PDF basados en XFA y AcroForms en formularios adaptables. El servicio no es compatible con formularios escaneados o rellenados. Para otras limitaciones, consulte el artículo <a href="known-issues.md">Problemas conocidos</a>.<br /> </p> 
-    <p>Se agregan compatibilidades con otros tipos de fuentes con frecuencia. Consulte la sección <a href="introduction.md">formularios PDF compatibles</a> con regularidad para mantenerse informado sobre las funciones y características nuevas.</p>
+    <p>Se agregan compatibilidades con otros tipos de fuentes con frecuencia. Consulte la sección <a href="introduction.md">formularios PDF compatibles</a> con regularidad para mantenerse actualizado sobre las funciones y características nuevas.</p>
 
    El servicio solo puede convertir a formularios adaptables los formularios que estén en inglés, francés, alemán, español, italiano y portugués. Puede traducir los formularios adaptables que se generan a otro idioma mediante el [flujo de trabajo de traducción de AEM.](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **¿Puede el servicio producir un XDP en lugar de un formulario adaptativo?**
-   <p>El servicio no produce un XDP como resultado. Se agregan con frecuencia características al servicio. Consulte la sección <a href="introduction.md">formularios PDF e idiomas compatibles</a> con regularidad para mantenerse informado sobre las funciones y características nuevas.</p> <br>
+   <p>El servicio no produce un XDP como resultado. Se agregan con frecuencia características al servicio. Consulte la sección <a href="introduction.md">formularios PDF e idiomas compatibles</a> con regularidad para mantenerse actualizado sobre las funciones y características nuevas.</p> <br>
 
 1. **¿Cuál es el tipo de esquema generado?**
    <p>Puede utilizar el servicio para generar lo siguiente: </p>

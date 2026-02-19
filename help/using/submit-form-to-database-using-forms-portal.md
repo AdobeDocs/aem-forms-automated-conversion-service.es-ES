@@ -4,10 +4,10 @@ description: Amplíe el metamodelo predeterminado para añadir patrones, validac
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 100%
+source-wordcount: '1161'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ El ejemplo que se analiza en este artículo es una implementación de referencia
 
 ## Requisitos previos {#pre-requisites}
 
-* Configuración de una instancia de autor de AEM 6.4 o 6.5
+* Configuración de una instancia de autor de AEM 6.5 o AEM 6.5 LTS
 * Instalar el [Service pack más reciente](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) para la instancia de AEM
 * Última versión del paquete de complementos de AEM Forms
 * Configurar el [servicio de conversión automatizada de formularios (AFCS)](configure-service.md)

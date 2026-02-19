@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 90%
 
 ---
 
@@ -23,13 +23,13 @@ El servicio de conversión automatizada de formularios (AFCS) ayuda a acelerar l
 * Aplica los correspondientes patrones y validaciones durante la conversión
 * Genera documentos de registro durante la conversión
 * Agrupa campos comunes en fragmentos de formulario reutilizables
-* Activa Adobe Analytics durante la conversión
+* Habilita Adobe Analytics durante la conversión
 
 ![Es sencillo. Facilítenos los formularios de origen y nosotros nos encargamos de todo. Le proporcionaremos formularios adaptables y atractivos. Siempre puede ajustar el resultado a su gusto. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Incorporación {#onboarding}
 
-El servicio está disponible de forma gratuita para los clientes a plazo de AEM Forms 6.4 y AEM Forms 6.5 locales y los clientes empresariales de Managed Services de Adobe. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio. El servicio también está disponible de forma gratuita y está prehabilitado para los clientes de AEM Forms as a Cloud Service.
+El servicio está disponible de forma gratuita para clientes de AEM 6.5 Forms y AEM 6.5 LTS Forms On-Premise y clientes empresariales de Adobe Managed Service. Póngase en contacto con el equipo de ventas de Adobe o con su representante de Adobe para solicitar acceso al servicio. El servicio también está disponible de forma gratuita y está prehabilitado para los clientes de AEM Forms as a Cloud Service.
 
 Adobe posibilita el acceso a su organización y otorga los pertinentes privilegios a las personas de su organización designadas como administradores. El administrador puede otorgar acceso a los desarrolladores de AEM Forms (usuarios) de su organización para conectarse al servicio. Consulte [Configurar el servicio de conversión automatizada de formularios](configure-service.md) para obtener más información.
 
@@ -47,11 +47,11 @@ El servicio de conversión automatizada de formularios (AFCS) se ejecuta en Adob
 
 ![Flujo de trabajo](assets/conversion-workflow.png)
 
-### 1. Configuración del entorno {#set-up-the-environment}
+### &#x200B;1. Configuración del entorno {#set-up-the-environment}
 
-El servicio de conversión automatizada de formularios (AFCS) se ejecuta en Adobe Cloud. [Configure la cuenta de Adobe I/O de su organización. Después, conecte la instancia local de AEM Forms](configure-service.md) con el servicio de conversión que se ejecuta en Adobe Cloud.
+El servicio de conversión automatizada de formularios (AFCS) se ejecuta en Adobe Cloud. [Configure la cuenta de Adobe I/O de su organización y conecte su instancia local de AEM](configure-service.md) al servicio de conversión que se ejecuta en Adobe Cloud. Para AEM 6.5 y AEM 6.5 LTS, debe habilitar los componentes principales de formulario adaptable si usa plantillas y temáticas basadas en componentes principales; consulte [Configurar el servicio](configure-service.md#referencepackage).
 
-### 2. Conversión de formularios PDF en formularios adaptables {#use-the-conversion-service}
+### &#x200B;2. Conversión de formularios PDF en formularios adaptables {#use-the-conversion-service}
 
 Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en formularios adaptables, [cargue formularios PDF](convert-existing-forms-to-adaptive-forms.md) en la instancia de AEM e [inicie la conversión](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Antes de cargar los formularios, tenga en cuenta lo siguiente:
 
@@ -62,8 +62,8 @@ Tras configurar el entorno de AEM Forms, para convertir los formularios PDF en f
 * Aplique los cambios sugeridos en formularios PDF que se indican en el artículo [Prácticas recomendadas y consideraciones](styles-and-pattern-considerations-and-best-practices.md).
 * Lea el artículo [Problemas conocidos](known-issues.md) para prevenir problemas.
 
-### 3. Revisión de formularios convertidos {#review-converted-forms}
+### &#x200B;3. Revisión de formularios convertidos {#review-converted-forms}
 
-Los formularios del mundo real pueden tener requisitos complejos de captura de datos en cuanto al diseño de campos, nombres o sugerencias implícitas que la lógica de detección, basada en inteligencia artificial o aprendizaje automático, podría no capturar con precisión. Tras finalizar la conversión automatizada, puede utilizar el [editor de revisiones y correcciones](review-correct-ui-edited.md) para revisar el formulario convertido, realizar los cambios pertinentes y generar un resultado más en consonancia con las expectativas. Después de realizar los cambios necesarios, envíe el formulario nuevamente para la conversión.
+Los formularios del mundo real pueden tener requisitos complejos de captura de datos en cuanto al diseño de campos, nombres o sugerencias implícitas que la lógica de detección, basada en inteligencia artificial o aprendizaje automático, podría no capturar con precisión. Tras finalizar la conversión automatizada, puede utilizar el [editor de revisiones y correcciones](review-correct-ui-edited.md) para revisar el formulario convertido, realizar las actualizaciones pertinentes y generar un resultado más en consonancia con las expectativas. Después de realizar los cambios necesarios, envíe el formulario nuevamente para la conversión.
 
 El tiempo necesario para la conversión automatizada depende de distintos factores, como, por ejemplo, el tamaño del formulario de entrada, la complejidad del formulario o el préstamo en la cola de procesamiento del servicio. El progreso se notificar regularmente al usuario a través del indicador de estado de la carpeta o el archivo. Cuando se completa la conversión, también se envía una notificación por correo electrónico a la dirección de correo electrónico configurada.

@@ -1,6 +1,6 @@
 ---
 title: Enviar los formularios adaptables convertidos con un esquema JSON a la base de datos
-description: Envíe los formularios adaptables convertidos con un esquema JSON a la base de datos, creando un formulario del modelo de datos y haciendo referencia a él en el flujo de trabajo de AEM.
+description: Envíe los formularios adaptables convertidos con un esquema JSON a la base de datos, creando un modelo de datos de formulario y haciendo referencia a él en el flujo de trabajo de AEM.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 100%
+source-wordcount: '1508'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ En este artículo se describen las instrucciones paso a paso para ejecutar corre
 
 ## Requisitos previos {#pre-requisites}
 
-* Configuración de una instancia de autor de AEM 6.4 o 6.5
+* Configuración de una instancia de autor de AEM 6.5 o AEM 6.5 LTS
 * Instalar el [Service pack más reciente](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) para la instancia de AEM
 * Última versión del paquete de complementos de AEM Forms
 * Configuración del [servicio de conversión automatizada de formularios](configure-service.md)
@@ -162,7 +162,7 @@ Una vez configurado MySQL como fuente de datos, ejecute los siguientes pasos par
 
 1. Pulse **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
 
-1. En el asistente **[!UICONTROL Create Form Data Model]**, especifique **workflow_submit** como nombre del formulario del modelo de datos, y toque **[!UICONTROL Next]**.
+1. En el asistente **[!UICONTROL Create Form Data Model]**, especifique **workflow_submit** como nombre del modelo de datos de formulario, y toque **[!UICONTROL Next]**.
 
 1. Seleccione la fuente de datos MySQL que ha configurado en la sección anterior y pulse **[!UICONTROL Create]**.
 
@@ -170,7 +170,7 @@ Una vez configurado MySQL como fuente de datos, ejecute los siguientes pasos par
 
    ![Datos de muestra MySQL](assets/fdm_details_workfdlow_submit.png)
 
-1. Seleccione el objeto del modelo de datos en el panel derecho y pulse **[!UICONTROL Edit Properties]**. Seleccione **[!UICONTROL get]** y **[!UICONTROL insert]** de las listas desplegables **[!UICONTROL Read Service]** y **[!UICONTROL Write Service]**. Especifique los argumentos del servicio de lectura y pulse **[!UICONTROL Done]**.
+1. Seleccione el objeto de modelo de datos en el panel derecho y pulse **[!UICONTROL Edit Properties]**. Seleccione **[!UICONTROL get]** y **[!UICONTROL insert]** de las listas desplegables **[!UICONTROL Read Service]** y **[!UICONTROL Write Service]**. Especifique los argumentos del servicio de lectura y pulse **[!UICONTROL Done]**.
 
 1. En la pestaña **[!UICONTROL Services]**, seleccione el servicio **[!UICONTROL get]** y pulse **[!UICONTROL Edit Properties]**. Seleccione **[!UICONTROL Output Model Object]**, desactive la alternancia **[!UICONTROL Return array]** y pulse **[!UICONTROL Done]**.
 
@@ -190,7 +190,7 @@ Utilice el [servicio de conversión automatizada de formularios (AFCS) para conv
 
 Seleccione el **formulario de contacto** que está disponible en la **[!UICONTROL output]** carpeta **[!UICONTROL Forms & Documents]** y pulse **[!UICONTROL Edit]**. Pulse **[!UICONTROL Preview]**, escriba los valores en los campos del formulario adaptable y pulse **[!UICONTROL Submit]**.
 
-Inicie sesión en **crx-repository** y vaya a */content/forms/fp/admin/submit/data* para ver los valores enviados en formato JSON. A continuación, se muestran los datos de ejemplo en formato JSON al enviar el formulario **Contacto** adaptable y convertido:
+Inicie sesión en **crx-repository** y vaya a */content/forms/fp/admin/submit/data* para ver los valores enviados en formato JSON. A continuación, se muestran los datos de muestra en formato JSON al enviar el formulario **Contacto** adaptable y convertido:
 
 ```json
 {

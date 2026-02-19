@@ -8,10 +8,10 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
-workflow-type: ht
-source-wordcount: '821'
-ht-degree: 100%
+source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Antes de empezar a utilizar el servicio de conversión automatizada de formulari
 * Los documentos cifrados, con contraseña y protegidos, no se convierten. Elimine el cifrado o las contraseñas antes de ejecutar la conversión.
 * No se admiten las tablas complejas sin bordes, anidadas y con valores de marcador de posición. Utilice el editor de formularios adaptables para añadir o modificar tablas complejas después de la conversión. Solo se admiten tablas simples, con campos vacíos, encabezados adecuados y límites delimitados.
 * El servicio convierte únicamente los formularios en inglés, francés, alemán, español, italiano y portugués a formularios adaptables. Puede traducir los formularios adaptables convertidos a otro idioma con el [Flujo de trabajo de traducción de AEM](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* AEM 6.4 Forms no admite la detección automática de diseños de varias columnas de los formularios de entrada.
+* AEM 6.5 Forms no admite la detección automática del diseño de varias columnas de los formularios de entrada en algunas configuraciones.
 * La información codificada con colores en el formulario PDF de origen no se transfiere al formulario adaptable.
 * Los colores del formulario PDF de origen no se transfieren a las temáticas de formulario adaptable.
 * Los formularios PDF en color se tratan como formularios en escala de grises y los campos se detectan en consecuencia.
