@@ -16,7 +16,7 @@ ht-degree: 83%
 
 # Conversión de formularios PDF a formularios adaptables {#convert-print-forms-to-adaptive-forms}
 
-El servicio de conversión automatizada de formularios (AFCS) de AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente sus formularios PDF en formularios fáciles de usar y adaptables<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Tanto si utiliza formularios PDF no interactivos, AcroForms como formularios PDF basados en XFA, el servicio de conversión automatizada de formularios (AFCS) puede transformarlos fácilmente en formularios adaptables. Para obtener información sobre las funcionalidades, el flujo de trabajo de conversión y la información de incorporación, consulte el servicio [Conversión automatizada de formularios](introduction.md).
+El servicio de conversión automatizada de formularios (AFCS) de AEM Forms, con tecnología de Adobe Sensei, convierte automáticamente sus formularios PDF en formularios fáciles de usar y adaptables<!--foundation and [core components](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Tanto si utiliza formularios PDF no interactivos, AcroForms como formularios PDF basados en XFA, el servicio de conversión automatizada de formularios (AFCS) puede transformarlos fácilmente en formularios adaptables. Para obtener información sobre las funcionalidades, el flujo de trabajo de conversión y la información de incorporación, consulte el servicio [Conversión automatizada de formularios](introduction.md).
 
 ## Requisitos previos {#pre-requisites}
 
