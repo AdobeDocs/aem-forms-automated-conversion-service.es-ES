@@ -8,9 +8,9 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '550'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Al comienzo, el servicio identifica y asigna los campos o paneles correctos a es
  <tbody>
   <tr>
    <td width="30%">Patrones conocidos y resoluciones</td> 
-   <td width="70%">Ejemplos</td> 
+   <td width="70%">Ejemplo</td> 
   </tr>
    <td><p><strong>Patrón</strong></p> <p>El servicio no convierte los formularios PDF rellenados a formularios adaptables.</p> <p> </p> <p><strong>Resolución</strong></p> <p>Utilice formularios adaptables vacíos.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 

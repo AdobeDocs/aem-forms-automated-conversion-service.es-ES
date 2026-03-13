@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
 workflow-type: tm+mt
-source-wordcount: '1291'
-ht-degree: 93%
+source-wordcount: '1356'
+ht-degree: 72%
 
 ---
 
@@ -63,18 +63,18 @@ El [!DNL Forms Automated Conversion service] de AEM utiliza inteligencia artific
 
 [!DNL Automated Forms Conversion service] está entrenado con un amplio conjunto de formularios. Identifica fácilmente los campos de un formulario de origen y los transforma en adaptables. Sin embargo, hay algunos campos y estilos en los formularios PDF que son fácilmente visibles para las personas, pero difíciles de identificar para el servicio. El servicio puede asignar tipos de campos o paneles diferentes a los aplicables a algunos campos o estilos. A continuación, se enumeran todos estos patrones de estilos y campos.
 
-Al comienzo, el servicio identifica y asigna los campos o paneles correctos a estos patrones, a medida que sigue aprendiendo de los datos de origen. Por el momento, puede usar el editor [Revisar y corregir](review-correct-ui-edited.md) para solucionar estos problemas. Antes de comenzar a corregir los problemas o a leer más, familiarícese con los [componentes de formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+Al comienzo, el servicio identifica y asigna los campos o paneles correctos a estos patrones, a medida que sigue aprendiendo de los datos de origen. Por el momento, puede usar el editor [Revisar y corregir](review-correct-ui-edited.md) para solucionar estos problemas. Antes de comenzar a corregir los problemas o seguir leyendo, familiarícese con los [componentes del formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ### Patrones generales {#general}
 
 | Patrón | Ejemplo |
 |--- |--- |
-| **Patrón** <br>El servicio no convierte los formularios PDF rellenados a formularios adaptables. <br><br>**Resolución** <br>Utilice formularios adaptables vacíos. | ![Formulario rellenado](assets/best-practice-filled-forms.png) |
-| **Patrón** <br>El servicio puede no reconocer el texto y los campos de un formulario con mucho contenido. <br><br>**Resolución** <br> Aumente la anchura entre el texto y los campos de un formulario con mucho contenido antes de iniciar la conversión. |  |
-| **Patrón** <br>El servicio no admite formularios escaneados. <br><br>**Resolución** <br>No los utilice. | ![Formulario escaneado](assets/scanned-forms.png) |
-| **Patrón** <br>El servicio no extrae imágenes ni texto en imágenes. <br><br>**Resolución** <br> Agregue manualmente las imágenes o el texto a los formularios convertidos. | ![Formulario con imagen con texto](assets/best-practice-image-with-text.png) |
-| **Patrón** <br>Las tablas con límites y bordes con puntos o que no estén bien delimitados no se pueden convertir. <br><br>**Resolución** <br>Utilice tablas con límites y bordes delimitados y explícitos. y admitidos. | ![Formulario de tabla no delimitada](assets/best-practice-table-dotted-non-clear.png) |
-| **Patrón** <br> Los formularios adaptables no admiten texto vertical por defecto. Por lo tanto, el servicio no convierte el texto vertical en el texto correspondiente de los formularios adaptables. <br><br>**Resolución** <br> Utilice el editor de formularios adaptables para agregar texto vertical, si es necesario. | ![Formulario de tabla no delimitada](assets/vertical-text.png) |
+| El servicio **Pattern** <br>no convierte el PDF forms rellenado en un formulario adaptable. <br><br>**Resolución** <br>Use formularios adaptables vacíos. | ![Formulario rellenado](assets/best-practice-filled-forms.png) |
+| **Patrón** <br>El servicio no puede reconocer el texto y los campos en un formulario denso. <br><br>**Resolución** <br> Aumente el ancho entre el texto y los campos de un formulario denso antes de iniciar la conversión. |  |
+| El servicio **Pattern** <br>no admite formularios escaneados. <br><br>**Resolución** <br>No utilice formularios escaneados. | ![Formulario escaneado](assets/scanned-forms.png) |
+| **Patrón** <br>El servicio no extrae imágenes ni texto dentro de las imágenes. <br><br>**Resolución** <br>: agregue manualmente imágenes o texto a los formularios convertidos. | ![Formulario con imagen con texto](assets/best-practice-image-with-text.png) |
+| **Patrón** <br>Las tablas con límites y bordes punteados o no claros no se convierten. <br><br>**Resolución** <br>Use tablas con bordes y límites explícitos claros. y admitidos. | ![Formulario de tabla no delimitada](assets/best-practice-table-dotted-non-clear.png) |
+| **Patrón** <br> Los formularios adaptables no admiten texto vertical por defecto. Por lo tanto, el servicio no convierte el texto vertical al texto de Forms adaptable correspondiente. <br><br>**Resolución** <br> Use el editor de formularios adaptables para agregar texto vertical, si es necesario. | ![Formulario de tabla no delimitada](assets/vertical-text.png) |
 
 
 
@@ -82,16 +82,16 @@ Al comienzo, el servicio identifica y asigna los campos o paneles correctos a es
 
 | Patrón | Resolución |
 |--- |--- |
-| **Patrón** <br> Las opciones del grupo de elección con formas distintas de recuadros o círculos no se convierten en los componentes correspondientes al formulario adaptable. <br><br>**Resolución** <br> Cambie las formas de las opciones de elección a recuadros o círculos o utilice el editor Revisar y corregir para identificarlas. | ![Campos de elección &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Patrón** <br> Las opciones del grupo de opciones con formas distintas de cuadro o círculo no se convierten en los correspondientes componentes de formulario adaptable. <br><br>**Resolución** <br> Cambie las opciones de opciones de formas a cuadros o círculos o utilice el editor Revisar y corregir para identificar las formas. | ![Campos de elección ](assets/best-practice-choice-group-options.png) |
 
 ### Campos del formulario {#form-fields}
 
 | Patrón | Resolución |
 |--- |--- |
-| **Patrón** <br> El servicio no identifica los campos que no tengan bordes bien delimitados. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para identificarlos. | ![campos con límites no delimitados](assets/best-practice-fields-without-clear-borders.png) |
-| **Patrón** <br> Es posible que el servicio no identifique algunos campos de formulario de grupo de elección con subtítulos en la parte inferior o derecha de un formulario. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para identificarlos. | ![Campos de elección](assets/best-practice-caption-bottom-right.png) |
-| **Patrón** <br> El servicio combina o asigna un tipo incorrecto a algunos campos de formulario que están situados muy cerca unos de otros o que no tienen bordes bien definidos. <br><br>**Resolución** <br> Utilice el editor Revisar y corregir para identificarlos. | ![Campos de elección](assets/best-practice-placed-very-near.png) |
-| **Patrón** <br> El servicio puede no reconocer los campos con subtítulos muy alejados o con una línea de puntos entre el subtítulo y el campo de entrada. <br><br>**Resolución** <br> Utilice campos de formulario con límites bien definidos o utilice el editor Revisar y corregir para solucionar estos problemas. | ![Campos muy alejados o con una línea de puntos entre el campo de subtítulo](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
+| El servicio **Pattern** <br> no identifica campos sin bordes claros. <br><br>**Resolución** <br> Use el editor Revisar y corregir para identificar estos campos. | ![campos con límites no delimitados](assets/best-practice-fields-without-clear-borders.png) |
+| **Patrón** <br> es posible que el servicio no identifique algunos campos de formulario de grupo de opción con títulos en la parte inferior o derecha de un formulario. <br><br>**Resolución** <br> Use el editor de revisión y corrección para identificar estos campos | ![Campos de elección](assets/best-practice-caption-bottom-right.png) |
+| El servicio **Pattern** <br> combina o asigna un tipo incorrecto a algunos campos de formulario que están muy cerca entre sí o que no tienen bordes claros. <br><br>**Resolución** <br> Use el editor Revisar y corregir para identificar estos campos. | ![Campos de elección](assets/best-practice-placed-very-near.png) |
+| El servicio **Pattern** <br> no puede reconocer campos con subtítulos lejanos o una línea de puntos entre el subtítulo y el campo de entrada. <br><br>**Resolución** <br> Use campos de formulario con límites claros o use el editor de revisión y corrección para solucionar estos problemas. | ![Campos muy alejados o con una línea de puntos entre el campo de subtítulo](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listas {#lists}
 
