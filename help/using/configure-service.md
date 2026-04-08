@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+source-git-commit: 2ec7faabc02ec6f416aafcbe7f7305e9323bd9eb
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2663'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Esta ayuda describe cómo un administrador de AEM puede configurar el servicio d
 
 * Uso de los sistemas operativos Linux® y Windows® de Microsoft®,
 
-* Configuración de servidores de correo SMTP
+* Configuración de los servidores de correo SMTP.
 =======
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
@@ -73,7 +73,7 @@ El servicio de conversión automatizada de formularios (AFCS) se ejecuta en la i
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de servicio más reciente de AEM {#servicepack}
 
-Descargue e instale el paquete de servicio de AEM más reciente. Para obtener instrucciones de instalación, consulte las [Notas de la versión del Service Pack de AEM 6.5](https://helpx.adobe.com/es/experience-manager/6-5/release-notes/sp-release-notes.html).
+Descargue e instale el paquete de servicio de AEM más reciente. Para obtener instrucciones de instalación, consulte las [Notas de la versión del Service Pack de AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de complementos de AEM Forms  {#downloadaemformsaddon}
 
@@ -94,7 +94,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** Puede usar las plantillas predeterminadas o crear plantillas personalizadas y apuntarles [configuración del servicio](#configure-the-cloud-service).
 
-**(solo para AEM 6.5 y AEM 6.5 LTS)** El servicio de conversión automatizada de formularios (AFCS) requiere al menos una temática y una plantilla para convertir un formulario de PDF en un formulario adaptable. Debe [habilitar los componentes principales de los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea usar plantillas y temáticas basadas en los componentes principales; las instrucciones se documentan allí. Si inicia AEM 6.5 o AEM 6.5 LTS en [modo de producción](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no se instalan. Cree una temática personalizada y una plantilla propia, o descargue e instale el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en la instancia de autor para obtener temáticas de referencia y plantillas. A continuación, señale [configuración del servicio](#configure-the-cloud-service) para usar las plantillas y los temas antes de usar el servicio.
+**(solo para AEM 6.5 y AEM 6.5 LTS)** El servicio de conversión automatizada de formularios (AFCS) requiere al menos una temática y una plantilla para convertir un formulario de PDF en un formulario adaptable. Debe [habilitar los componentes principales de los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea usar plantillas y temáticas basadas en los componentes principales; las instrucciones se documentan allí. Si inicia AEM 6.5 o AEM 6.5 LTS en [modo de producción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no se instalan. Cree una temática personalizada y una plantilla propia, o descargue e instale el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en la instancia de autor para obtener temáticas de referencia y plantillas. A continuación, señale [configuración del servicio](#configure-the-cloud-service) para usar las plantillas y los temas antes de usar el servicio.
 
 ## Configuración del acceso y los permisos
 
@@ -146,7 +146,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 -->
 
 ### Adición de usuarios a grupos de usuarios de los formularios {#adduserstousergroup}
@@ -235,7 +235,7 @@ Inicie sesión en la instancia de autor para crear las configuraciones de IMS de
       * **Id. de cliente**: copie y pegue **Clave de API (Id. de cliente)**.
       * **Secreto de cliente**: copie y pegue **Secreto de cliente**.
       * **Ámbito**: copie y pegue **Ámbitos**.
-      * **ID de organización**: copie y pegue **ID de cuenta técnica**.
+      * **ID de organización**: copie y pegue **ID de organización**.
 
      ![Crear la configuración de IMS de Adobe](/help/using/assets/save-ims-configuration.png)
 
@@ -256,7 +256,7 @@ Inicie sesión en la instancia de autor para crear las configuraciones de IMS de
 
    Cuando la conexión se realiza correctamente, aparece el mensaje *Token recuperado correctamente*.
 
-   ![Cuando la conexión se realiza correctamente, aparece el mensaje Token recuperado correctamente. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Cuando la conexión se realiza correctamente, aparece el mensaje Token recuperado correctamente. ](/help/using/assets/healthy-dialog.png)
 
 1. Haga clic en **Cerrar**.
 
