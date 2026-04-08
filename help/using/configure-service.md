@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+source-git-commit: 2ec7faabc02ec6f416aafcbe7f7305e9323bd9eb
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2663'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Esta ayuda describe cómo un administrador de AEM puede configurar el servicio d
 
 * Uso de los sistemas operativos Linux® y Windows® de Microsoft®,
 
-* Configuración de servidores de correo SMTP
+* Configuración de los servidores de correo SMTP.
 =======
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
@@ -235,7 +235,7 @@ Inicie sesión en la instancia de autor para crear las configuraciones de IMS de
       * **Id. de cliente**: copie y pegue **Clave de API (Id. de cliente)**.
       * **Secreto de cliente**: copie y pegue **Secreto de cliente**.
       * **Ámbito**: copie y pegue **Ámbitos**.
-      * **ID de organización**: copie y pegue **ID de cuenta técnica**.
+      * **ID de organización**: copie y pegue **ID de organización**.
 
      ![Crear la configuración de IMS de Adobe](/help/using/assets/save-ims-configuration.png)
 
