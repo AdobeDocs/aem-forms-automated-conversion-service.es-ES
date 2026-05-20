@@ -10,11 +10,21 @@ level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 TQID: https://experienceleague.adobe.com/CYDvLiZX-BqErF-cKQX1SieVDMxkoD1kfP4rLIT9ku0
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ce44533e-8ec8-4e11-a9e9-78b0fe561832id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
 source-wordcount: 689
@@ -32,7 +42,7 @@ En este documento se proporcionan pasos básicos de solución de problemas para 
 
 | Error | Ejemplo |
 |--- |--- |
-| **Mensaje de error** <br> El encabezado de token de acceso no está disponible. <br><br> **Motivo** <br> Un administrador ha creado varias configuraciones de IMS o la configuración de IMS no puede conectarse con el servicio de conversión automatizada de formularios en Adobe Cloud. <br><br>**Resolución** <br> Si hay varias configuraciones, elimine todas las configuraciones y [cree una nueva configuración](configure-service.md#obtainpubliccertificates). <br> Si solo hay una configuración, usa **Comprobación de estado** para [comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible ](assets/invalid-ims-configurations.png) |
+| **Mensaje de error** <br> El encabezado de token de acceso no está disponible. <br><br> **Motivo** <br> Un administrador ha creado varias configuraciones de IMS o la configuración de IMS no puede conectarse con el servicio de conversión automatizada de formularios en Adobe Cloud. <br><br>**Resolución** <br> Si hay varias configuraciones, elimine todas las configuraciones y [cree una nueva configuración](configure-service.md#obtainpubliccertificates). <br> Si solo hay una configuración, usa **Comprobación de estado** para [comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible &#x200B;](assets/invalid-ims-configurations.png) |
 | **Mensaje de error** <br> No se puede conectar al servicio.  <br><br>**Razón** <br> URL de servicio incorrecta o no se menciona ninguna URL de servicio en los servicios en la nube del servicio de conversión automatizada de formularios (AFCS). <br><br>**Resolución** <br> Corrija la [URL de servicio](configure-service.md#configure-the-cloud-service) en los servicios en la nube del servicio de conversión automatizada de formularios (AFCS). | ![No se puede conectar al servicio.](assets/wrong-service-url-configured.png) |
 | **Mensaje de error** <br> El servicio no ha podido convertir el formulario.  <br><br>**Motivo** <br> Problemas de conectividad de red en su extremo, el servicio está inactivo debido a mantenimiento programado o interrupción en Adobe Cloud. <br><br>**Solución** <br> Resuelva los problemas de conectividad de red en su extremo y verifique el estado del servicio en https://status.adobe.com/ para detectar una interrupción planificada o no planificada. | ![No se puede conectar al servicio.](assets/conversion-failure.png) |
 | **Mensaje de error** <br> El número de páginas es más de 15.  <br><br>**Motivo** <br> El formulario de origen tiene más de 15 páginas.  <br><br>**Solución** <br> Use Adobe Acrobat para dividir formularios con más de 15 páginas. Reduzca el número de páginas de un formulario a menos de 15. | ![No se puede conectar al servicio.](assets/number-of-pages.png) |
