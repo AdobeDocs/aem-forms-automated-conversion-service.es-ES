@@ -9,10 +9,26 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/CYDvLiZX-BqErF-cKQX1SieVDMxkoD1kfP4rLIT9ku0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: 689
+ht-degree: 94%
 
 ---
 
@@ -26,16 +42,16 @@ En este documento se proporcionan pasos básicos de solución de problemas para 
 
 | Error | Ejemplo |
 |--- |--- |
-| **Mensaje de error** <br> El encabezado de token de acceso no está disponible. <br><br> **Motivo** <br> Un administrador ha creado varias configuraciones de IMS o la configuración de IMS no puede conectarse con el servicio de conversión automatizada de formularios en Adobe Cloud. <br><br>**Solución** <br> Si hay varias configuraciones, elimine todas las configuraciones y [cree una configuración nueva](configure-service.md#obtainpubliccertificates). <br> Si solo hay una configuración, utilice **Comprobación de estado** para [comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible ](assets/invalid-ims-configurations.png) |
+| **Mensaje de error** <br> El encabezado de token de acceso no está disponible. <br><br> **Motivo** <br> Un administrador ha creado varias configuraciones de IMS o la configuración de IMS no puede conectarse con el servicio de conversión automatizada de formularios en Adobe Cloud. <br><br>**Resolución** <br> Si hay varias configuraciones, elimine todas las configuraciones y [cree una nueva configuración](configure-service.md#obtainpubliccertificates). <br> Si solo hay una configuración, usa **Comprobación de estado** para [comprobar la conectividad](configure-service.md#createintegrationoption). | ![El encabezado de token de acceso no está disponible &#x200B;](assets/invalid-ims-configurations.png) |
 | **Mensaje de error** <br> No se puede conectar al servicio.  <br><br>**Razón** <br> URL de servicio incorrecta o no se menciona ninguna URL de servicio en los servicios en la nube del servicio de conversión automatizada de formularios (AFCS). <br><br>**Resolución** <br> Corrija la [URL de servicio](configure-service.md#configure-the-cloud-service) en los servicios en la nube del servicio de conversión automatizada de formularios (AFCS). | ![No se puede conectar al servicio.](assets/wrong-service-url-configured.png) |
 | **Mensaje de error** <br> El servicio no ha podido convertir el formulario.  <br><br>**Motivo** <br> Problemas de conectividad de red en su extremo, el servicio está inactivo debido a mantenimiento programado o interrupción en Adobe Cloud. <br><br>**Solución** <br> Resuelva los problemas de conectividad de red en su extremo y verifique el estado del servicio en https://status.adobe.com/es-es/ para detectar una interrupción planificada o no planificada. | ![No se puede conectar al servicio.](assets/conversion-failure.png) |
 | **Mensaje de error** <br> El número de páginas es más de 15.  <br><br>**Motivo** <br> El formulario de origen tiene más de 15 páginas.  <br><br>**Solución** <br> Use Adobe Acrobat para dividir formularios con más de 15 páginas. Reduzca el número de páginas de un formulario a menos de 15. | ![No se puede conectar al servicio.](assets/number-of-pages.png) |
 | **Mensaje de error** <br> El número de archivos es más de 15.  <br><br>**Motivo** <br>  La carpeta contiene más de 15 formularios. <br><br>**Solución** <br> Reduzca el número de formularios de una carpeta en 15 o menos. Reduzca el número de páginas de una carpeta a menos de 50. Reduzca el tamaño de la carpeta a menos de 10 MB. No guarde formularios en una subcarpeta. Organice los formularios de origen en un lote de 8 a 15 formularios. | ![No se puede conectar al servicio.](assets/number-of-pages.png) |
 | **Mensaje de error** <br> El formato del archivo de origen no es compatible.  <br><br>**Motivo** <br> La carpeta que contiene los formularios de origen tiene algunos archivos no compatibles. <br><br>**Solución** <br> El servicio solo admite archivos .xdp y .pdf. Elimine archivos con cualquier otra extensión de la carpeta y ejecute la conversión. | ![No se puede conectar al servicio.](assets/unsupported-file-formats.png) |
 | **Mensaje de error** <br> Los formularios escaneados no se admiten.  <br><br>**Motivo** <br> El formulario PDF contiene solo imágenes escaneadas del formulario y no contiene estructura de contenido. <br><br>**Solución** <br> El servicio no admite la conversión de formularios escaneados o una imagen de un formulario a una configuración adaptativa lista para usar. Sin embargo, puede utilizar Adobe Acrobat para convertir la imagen de un formulario a un formulario PDF. Por lo tanto, use el servicio para convertir el formulario PDF a un formulario adaptativo. Utilice siempre una imagen de alta calidad del formulario para la conversión en Acrobat. Mejora la calidad de la conversión. | ![No se puede conectar al servicio.](assets/scanned-forms-error.png) |
-| **Mensaje de error** <br> El formulario PDF cifrado no es compatible. <br><br>**Motivo** <br> La carpeta contiene formularios PDF cifrados. <br><br>**Solución** <br> El servicio no admite la conversión de un formulario PDF cifrado a un formulario adaptable. Elimine el cifrado, cargue el formulario no cifrado y ejecute la conversión. | ![No se puede conectar al servicio.](assets/secured-pdf-form.png) |
-| **Mensaje de error** <br> No se puede analizar el esquema de JSON del metamodelo. <br><br>**Motivo** <br> El esquema de JSON suministrado al servicio no tiene un formato correcto, contiene caracteres no válidos o utiliza una sintaxis no válida para asignar componentes.  <br><br>**Solución** <br> Compruebe el formato del archivo JSON. Puede usar cualquier validador de JSON en línea para verificar el formato y la estructura del esquema. Consulte el artículo [Ampliar el metamodelo predeterminado](extending-the-default-meta-model.md) para obtener información sobre la sintaxis de metamodelos. | ![No se puede conectar al servicio.](assets/invalid-meta-model-schema.png) |
-| **Error (solo en entornos locales)** <br> La opción **[!UICONTROL Source Language]** no enumera el idioma correcto del formulario adaptable. <br><br>**Razón** <br> La propiedad jcr:language del formulario adaptable no está correctamente configurada. <br><br>**Resolución** <br> Abra CRX-DE lite, vaya a `/content/forms/af/`, abra el nodo `jcr:content` y establezca el valor del nodo en el idioma correcto. Para obtener la lista de idiomas compatibles, consulte [Agregar soporte de localización para configuraciones regionales no admitidas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=es#add-localization-support-for-non-supported-locales). | ![No se puede conectar al servicio.](assets/aem-forms-translation-project-language-unavailable.png) |
+| **Mensaje de error** <br> El formulario PDF cifrado no es compatible.  <br><br>**Motivo** <br> La carpeta contiene formularios PDF cifrados. <br><br>**Solución** <br> El servicio no admite la conversión de un formulario PDF cifrado a un formulario adaptable. Elimine el cifrado, cargue el formulario no cifrado y ejecute la conversión. | ![No se puede conectar al servicio.](assets/secured-pdf-form.png) |
+| **Mensaje de error** <br> No se puede analizar el esquema de JSON del metamodelo.  <br><br>**Motivo** <br> El esquema de JSON suministrado al servicio no tiene un formato correcto, contiene caracteres no válidos o utiliza una sintaxis no válida para asignar componentes.  <br><br>**Solución** <br> Compruebe el formato del archivo JSON. Puede usar cualquier validador de JSON en línea para verificar el formato y la estructura del esquema. Consulte el artículo [Ampliar el metamodelo predeterminado](extending-the-default-meta-model.md) para obtener información sobre la sintaxis de metamodelos. | ![No se puede conectar al servicio.](assets/invalid-meta-model-schema.png) |
+| **Error (solo en entornos locales)** <br> La opción **[!UICONTROL Source Language]** no enumera el idioma correcto del formulario adaptable. <br><br>**Motivo** <br> La propiedad jcr:language del formulario adaptable no está establecida correctamente.  <br><br>**Resolución** <br> Abra CRX-DE lite, vaya a `/content/forms/af/`, abra el nodo `jcr:content` y establezca el valor del nodo en el idioma correcto. Para obtener la lista de idiomas compatibles, consulte [Agregar soporte de localización para configuraciones regionales no admitidas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=es#add-localization-support-for-non-supported-locales). | ![No se puede conectar al servicio.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 

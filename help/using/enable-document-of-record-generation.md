@@ -10,9 +10,23 @@ level: Beginner, Intermediate
 page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ImCKo49r-l9Iq0uOVa16bzA1ga9e-n-Q6Eo4MvB9SB4
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: 884
 ht-degree: 100%
 
 ---
@@ -70,7 +84,7 @@ En este artículo se describen las rutas recomendadas para generar un DoR en fun
    <td><p>Formularios PDF no interactivos</p></td> 
    <td> 
     <ul> 
-     <li><a href="#generate-document-of-record-using-cloud-configuration">Active la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR con una plantilla predeterminada</a></li> 
+     <li><a href="#generate-document-of-record-using-cloud-configuration">Habilite la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR con una plantilla predeterminada</a></li> 
      <li><a href="#edit-adaptive-form-properties-generate-document-of-record">Edite las propiedades del formulario adaptable después de la conversión del formulario adaptable para permitir la generación de un DoR mediante la plantilla de formulario predeterminada o cualquier otra plantilla de formulario</a></li> 
     </ul> </td> 
   </tr>
@@ -78,7 +92,7 @@ En este artículo se describen las rutas recomendadas para generar un DoR en fun
    <td><p>Formularios PDF basados en AcroForms o XFA</p></td> 
    <td> 
     <ul> 
-     <li><a href="#use-input-form-as-template-to-generate-document-of-record">Activar la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR utilizando el formulario de origen como plantilla</a></li> 
+     <li><a href="#use-input-form-as-template-to-generate-document-of-record">Habilitar la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR utilizando el formulario de origen como plantilla</a></li> 
      <li><a href="#edit-adaptive-form-properties-to-generate-document-of-record">Edite las propiedades del formulario adaptable después de la conversión del formulario adaptable para permitir la generación de un DoR utilizando la plantilla predeterminada, el formulario de origen como plantilla o cualquier otra plantilla de formulario</a></li> 
     </ul> </td> 
   </tr>    
@@ -89,7 +103,7 @@ En este artículo se describen las rutas recomendadas para generar un DoR en fun
 
 Si utiliza un formulario PDF no interactivo como formulario de origen para el servicio de conversión automatizada de formularios (AFCS), puede hacer lo siguiente:
 
-* Activar la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR con una plantilla predeterminada.
+* Habilitar la generación de un DoR antes de la conversión de formulario adaptable para generar un DoR con una plantilla predeterminada.
 * O bien, editar las propiedades del formulario adaptable después de la conversión para permitir la generación de un DoR mediante la plantilla de formulario predeterminada o cualquier otra plantilla de formulario.
 
 ### Habilitación de la generación de un DoR antes de la conversión para generar un DoR usando la plantilla predeterminada {#generate-document-of-record-using-cloud-configuration}
@@ -127,7 +141,7 @@ Si usa un formulario PDF basado en AcroForm o XFA como formulario de origen para
 
 * Edite las propiedades del formulario adaptable después de la conversión del formulario adaptable para permitir la generación de un DoR utilizando la plantilla predeterminada, el formulario de origen como plantilla o cualquier otra plantilla de formulario
 
-### Habilitación de la generación de un DoR antes de la conversión para generar un DoR usando la plantilla del formulario de origen {#use-input-form-as-template-to-generate-document-of-record}
+### Habilitación de la generación de un DoR antes de la conversión para generar un DoR usando la plantilla de formulario de origen {#use-input-form-as-template-to-generate-document-of-record}
 
 1. Seleccione la opción **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > Propiedades de la configuración en la nube utilizadas para la conversión > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]**.
 

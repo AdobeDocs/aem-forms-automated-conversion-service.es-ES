@@ -8,10 +8,24 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 100%
+source-wordcount: 2548
+ht-degree: 99%
 
 ---
 
@@ -45,7 +59,7 @@ El editor Revisar y corregir tiene una interfaz fácil de usar. Tiene los siguie
 
 ![Revisar y corregir la IU](assets/reviewcorrectui.png)
 
-**A.** Navegador de contenido **B.** Explorador de propiedades **C.** Barra de herramientas **D.** Botón Propiedades **E.** Botón Filtro **F.** Botón Guardar **G.** Formulario PDF superpuesto con campos identificados
+**A.** Explorador de contenido **B.** Explorador de propiedades **C.** Barra de herramientas **D.** Botón de propiedades **E.** Botón de filtro **F.** Botón de guardar **G.** Formulario de PDF superpuesto con campos identificados
 
 Después de la primera conversión correcta, el servicio de conversión superpone el documento PDF de origen con los campos y componentes identificados. Estos campos o componentes son de tipo: texto, campo, panel, grupo de opciones y tabla.
 
@@ -63,7 +77,7 @@ Después de la primera conversión correcta, el servicio de conversión superpon
 
 ### Antes de comenzar {#before-you-start}
 
-* El editor Revisar y corregir no admite fragmentos. No utilice el editor para revisar las conversiones que tenían la opción **Extraer fragmento** activada durante las conversiones. Puede usar la variable [editor de formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para dichas conversiones.
+* El editor Revisar y corregir no admite fragmentos. No utilice el editor para revisar las conversiones que tenían la opción **Extraer fragmento** habilitada durante las conversiones. Puede usar la variable [editor de formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/introduction-forms-authoring.html) para dichas conversiones.
 
 * El editor Revisar y corregir no tiene la acción Deshacer. Utilice el botón Guardar solo para guardar los cambios de forma permanente.
 
@@ -147,7 +161,7 @@ La conversión puede dejar algunas celdas, límites o contenido de una celda de 
 
 ### Cambiar el tipo de un componente {#change-type-a-component}
 
-El servicio de conversión puede crear algunos campos de tipo incorrecto. Por ejemplo, en la imagen siguiente, el campo **Sexo** se identifica incorrectamente como un campo de **Texto**. Además, el contenido de la etiqueta es incorrecto. El campo debe ser un tipo de campo de opción y la etiqueta debe ser Sexo. Para cambiar el tipo de un componente y corregir su etiqueta, haga lo siguiente:
+El servicio de conversión puede crear algunos campos de tipo incorrecto. Por ejemplo, en la imagen siguiente, el campo **Gender** se identifica incorrectamente como un campo de **Texto**. Además, el contenido de la etiqueta es incorrecto. El campo debe ser un tipo de campo de opción y la etiqueta debe ser Género. Para cambiar el tipo de un componente y corregir su etiqueta, haga lo siguiente:
 
 Seleccione el campo que desea convertir, presione ![](assets/smock_shuffle_18_n.svg) y pulse un tipo de campo. El campo se convierte en el tipo de campo seleccionado. Un campo solo se puede convertir en los tipos enumerados en la siguiente tabla. Un componente de panel solo se puede desagrupar, no transformar.
 
