@@ -93,7 +93,7 @@ El servicio de conversión automatizada de formularios (AFCS) se ejecuta en la i
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de servicio más reciente de AEM {#servicepack}
 
-Descargue e instale el paquete de servicio de AEM más reciente. Para obtener instrucciones de instalación, consulte las [Notas de la versión del Service Pack de AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
+Descargue e instale el paquete de servicio de AEM más reciente. Para obtener instrucciones de instalación, consulte las [Notas de la versión del Service Pack de AEM 6.5](https://helpx.adobe.com/es/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de complementos de AEM Forms  {#downloadaemformsaddon}
 
@@ -114,7 +114,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** Puede usar las plantillas predeterminadas o crear plantillas personalizadas y apuntarles [configuración del servicio](#configure-the-cloud-service).
 
-**(solo para AEM 6.5 y AEM 6.5 LTS)** El servicio de conversión automatizada de formularios (AFCS) requiere al menos una temática y una plantilla para convertir un formulario de PDF en un formulario adaptable. Debe [habilitar los componentes principales de los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea usar plantillas y temáticas basadas en los componentes principales; las instrucciones se documentan allí. Si inicia AEM 6.5 o AEM 6.5 LTS en [modo de producción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no se instalan. Cree una temática personalizada y una plantilla propia, o descargue e instale el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en la instancia de autor para obtener temáticas de referencia y plantillas. A continuación, señale [configuración del servicio](#configure-the-cloud-service) para usar las plantillas y los temas antes de usar el servicio.
+**(solo para AEM 6.5 y AEM 6.5 LTS)** El servicio de conversión automatizada de formularios (AFCS) requiere al menos una temática y una plantilla para convertir un formulario de PDF en un formulario adaptable. Debe [habilitar los componentes principales de los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea usar plantillas y temáticas basadas en los componentes principales; las instrucciones se documentan allí. Si inicia AEM 6.5 o AEM 6.5 LTS en [modo de producción](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no se instalan. Cree una temática personalizada y una plantilla propia, o descargue e instale el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en la instancia de autor para obtener temáticas de referencia y plantillas. A continuación, señale [configuración del servicio](#configure-the-cloud-service) para usar las plantillas y los temas antes de usar el servicio.
 
 ## Configuración del acceso y los permisos
 
@@ -166,7 +166,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
 -->
 
 ### Adición de usuarios a grupos de usuarios de los formularios {#adduserstousergroup}
