@@ -8,10 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2569'
-ht-degree: 100%
+source-wordcount: 2659
+ht-degree: 81%
 
 ---
 
@@ -114,9 +120,9 @@ Cada propiedad puede incluir además, lo siguiente:
 
 ![Propiedades del metamodelo](assets/meta_model_elements.gif)
 
-Basado en las palabras clave a las que se hace referencia mediante **aem:affKeyword**, el servicio de conversión realiza una operación de búsqueda en los campos del formulario de origen. El servicio de conversión aplica las propiedades del esquema JSON y propiedades adicionales a los campos que cumplen los criterios de búsqueda.
+En función de las palabras clave a las que se hace referencia mediante **aem:affKeyword**, el servicio de conversión realiza una operación de búsqueda en los campos del formulario de origen. El servicio de conversión aplica las propiedades del esquema JSON y propiedades adicionales a los campos que cumplen los criterios de búsqueda.
 
-En este ejemplo, el servicio de conversión busca las palabras clave tel., teléfono, teléfono móvil, teléfono de trabajo, teléfono de línea, número de teléfono, núm. de teléfono y número de tel. en el formulario de origen. En función de los campos que incluyen estas palabras clave, el servicio de conversión aplica el tipo, patrón y aem:afProperties a los campos de formulario adaptables después de la conversión.
+En este ejemplo, el servicio de conversión busca las palabras clave tel., teléfono, teléfono móvil, teléfono de trabajo, teléfono de línea, número de teléfono, núm. de teléfono y número de tel. en el formulario de origen. En función de los campos que incluyen estas palabras clave, el servicio de conversión aplica el tipo, el patrón y aem:afProperties a los campos del formulario adaptable después de la conversión.
 
 ### Propiedades del esquema JSON para campos de formulario adaptables generados {#jsonschemaproperties}
 
@@ -129,7 +135,7 @@ El metamodelo admite las siguientes propiedades comunes de esquema JSON para los
    <th><strong>Descripción</strong></th> 
   </tr> 
   <tr> 
-   <td><p>Título</p></td> 
+   <td><p>título</p></td> 
    <td> 
     <p>El texto mencionado dentro de la propiedad Título en un metamodelo sirve como palabra clave de búsqueda para realizar acciones en los campos de formulario adaptables generados. Por ejemplo, modificar la etiqueta de un campo de formulario adaptable. Para obtener más información, consulte <strong>Modificación de la etiqueta de un campo del formulario</strong> en <a href="#custommetamodelexamples">Ejemplos de metamodelos personalizados.</a></p> </td> 
   </tr>
@@ -147,9 +153,9 @@ El metamodelo admite las siguientes propiedades comunes de esquema JSON para los
      <li>Booleano: genera un componente de formulario adaptable de conmutación.</li>
      </ul><p>Para obtener más información sobre el uso de la propiedad tipo en un metamodelo, consulte <strong>Modificación del tipo de campo de formulario</strong> en <a href="#custommetamodelexamples">Ejemplos de metamodelos personalizados.</a></p></td> 
   </tr>
-  <td><p>patrón</p></td> 
+  <td><p>pattern</p></td> 
    <td> 
-    <p>La propiedad patrón restringe el valor del campo de formulario adaptable generado en función de una expresión regular. Por ejemplo, el siguiente código del metamodelo restringe el valor del campo de formulario adaptable generado a diez dígitos:<br>"pattern": "/\\d{10}/"<br>Del mismo modo, el siguiente código del metamodelo restringe el valor de un campo a un formato de fecha específico.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
+    <p>La propiedad patrón restringe el valor del campo de formulario adaptable generado en función de una expresión regular. Por ejemplo, el siguiente código del metamodelo restringe el valor del campo de formulario adaptable generado a diez dígitos: <br>"pattern": "/\\d{10}/"<br>Del mismo modo, el siguiente código del metamodelo restringe el valor de un campo a un formato de fecha específico.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
   </tr>
   <td><p>formato</p></td> 
    <td> 
@@ -177,11 +183,11 @@ Se hace referencia a las palabras clave mediante la propiedad **aem:affKeyword**
 }
 ```
 
-En este ejemplo, el servicio de conversión utiliza el texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** del formulario, el servicio de conversión convierte el campo en un **número** usando la propiedad **tipo**.
+En este ejemplo, el servicio de conversión usa el texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** del formulario, el servicio de conversión convierte el campo en un **número** usando la propiedad **tipo**.
 
 ### Propiedades adicionales para los campos de formulario adaptables generados {#additionalproperties}
 
-Puede usar la propiedad **aem:afProperties** en el metamodelo para definir las siguientes propiedades adicionales para los campos de formularios adaptables generados mediante el servicio de conversión automatizada de formularios (AFCS).
+Puede usar la propiedad **aem:afProperties** del metamodelo para definir las siguientes propiedades adicionales para los campos de formularios adaptables generados mediante el servicio de conversión automatizada de formularios (AFCS):
 
 <table> 
  <tbody> 
@@ -201,7 +207,7 @@ Puede usar la propiedad **aem:afProperties** en el metamodelo para definir las s
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>La propiedad jcr:title junto con la propiedad title del esquema JSON permite modificar la etiqueta de un campo de formulario adaptable después de la conversión.<br>Para obtener más información, consulte <strong>Modificación de la etiqueta de un campo del formulario</strong> en <a href="#custommetamodelexamples">Ejemplos de metamodelos personalizados.</a><br>Consulte <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Creación de formularios adaptables mediante el esquema JSON</a> para obtener información sobre más propiedades que se pueden aplicar a los campos de formulario adaptables mediante el esquema JSON.</p>
+    <p>La propiedad jcr:title junto con la propiedad title del esquema JSON permite modificar la etiqueta de un campo de formulario adaptable después de la conversión.<br>Para obtener más información, consulte <strong>Modificar la etiqueta de un campo de formulario</strong> en <a href="#custommetamodelexamples">ejemplos de metamodelos personalizados.</a><br>Consulte <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Creación de formularios adaptables mediante el esquema JSON</a> para obtener información sobre más propiedades que puede aplicar a los campos de formulario adaptables mediante el esquema JSON.</p>
     <p></p></td> 
   </tr>
   <td><p>sling:resourceType y guideNodeClass</p></td> 
@@ -226,7 +232,7 @@ Puede crear un metamodelo específico de un idioma. Este metamodelo ayuda a crea
 * Italiano (it)
 * Portugués (pt-br)
 
-Agregue la metaetiqueta *aem:Language* en la parte superior del metamodelo para especificar su idioma. Por ejemplo:
+Agregue la etiqueta de metaetiqueta *aem:Language* a la parte superior de un metamodelo para especificar su idioma. Por ejemplo:
 
 ```JSON
 "metaTags": {
@@ -262,7 +268,7 @@ Su organización puede tener otros patrones y validaciones, además de los que a
 
 El servicio de conversión automatizada de formularios (AFCS) utiliza un metamodelo predeterminado guardado en la siguiente ubicación para asignar campos de formulario de origen a los campos de formularios adaptables durante la conversión:
 
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
+http://<server>:<port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
 Sin embargo, puede guardar un metamodelo personalizado en una carpeta y modificar las propiedades del servicio de conversión para utilizar el metamodelo personalizado durante la conversión.
 
@@ -296,7 +302,7 @@ Algunos ejemplos comunes del uso de un metamodelo personalizado para modificar l
 
 **Ejemplo:** modifique la etiqueta de número de cuenta bancaria en el formulario a un número de cuenta personalizado en el formulario adaptable después de la conversión.
 
-En este metamodelo personalizado, el servicio de conversión utiliza la propiedad **title** como palabra clave de búsqueda. Después de recuperar la variable **Número de cuenta bancaria** en el formulario, el servicio de conversión reemplaza el texto por la cadena **Número de cuenta del cliente** mencionada con la propiedad **jcr:title** en la sección **aem:afProperties**.
+En este metamodelo personalizado, el servicio de conversión utiliza la propiedad **title** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** en el formulario, el servicio de conversión reemplaza el texto con la cadena **Número de cuenta del cliente** mencionada con la propiedad **jcr:title** en la sección **aem:afProperties**.
 
 ```
 {
@@ -314,7 +320,7 @@ En este metamodelo personalizado, el servicio de conversión utiliza la propieda
 
 **Ejemplo**: modifique el campo **Número de cuenta bancaria** del tipo de texto del formulario antes de la conversión a un campo de tipo numérico en el formulario adaptable después de la conversión.
 
-En este metamodelo personalizado, el servicio de conversión utiliza el texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** del formulario, el servicio de conversión convierte el campo en un tipo de número mediante la propiedad **type**.
+En este metamodelo personalizado, el servicio de conversión usa el texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** del formulario, el servicio de conversión convierte el campo en un tipo de número mediante la propiedad **type**.
 
 ```
 {
@@ -329,7 +335,7 @@ En este metamodelo personalizado, el servicio de conversión utiliza el texto de
 
 **Ejemplo**: agregar texto de ayuda al campo **Número de cuenta bancaria** del formulario adaptable.
 
-En este metamodelo personalizado, el servicio de conversión utiliza el texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto de formulario **Número de cuenta bancaria**, el servicio de conversión agrega el texto Ayuda al campo de formulario adaptable utilizando la propiedad **descripción**.
+En este metamodelo personalizado, el servicio de conversión usa el texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto de formulario **Número de cuenta bancaria**, el servicio de conversión agrega el texto Ayuda al campo de formulario adaptable utilizando la propiedad **descripción**.
 
 ```
 {
@@ -345,14 +351,14 @@ En este metamodelo personalizado, el servicio de conversión utiliza el texto de
 
 **Ejemplo**: convertir el campo de tipo de cadena **País** en el formulario antes de la conversión a casillas de verificación en el formulario adaptable después de la conversión.
 
-En este metamodelo personalizado, el servicio de conversión utiliza texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar la variable **País** en el formulario, el servicio de conversión convierte el campo en las siguientes casillas de verificación mediante la propiedad **enum**:
+En este metamodelo personalizado, el servicio de conversión usa texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar la variable **País** en el formulario, el servicio de conversión convierte el campo en las siguientes casillas de verificación mediante la propiedad **enum**:
 
 * India
 * Inglaterra
 * Australia
 * Nueva Zelanda
 
-Las propiedades **sling:resourceType** y **guideNodeClass** asignan un campo de formulario al componente de formulario adaptable de la casilla de verificación.
+Las propiedades **sling:resourceType** y **guideNodeClass** asignan un campo de formulario al componente de casilla de verificación del formulario adaptable.
 
 ```
 {
@@ -379,7 +385,7 @@ Las propiedades **sling:resourceType** y **guideNodeClass** asignan un campo de 
 
 **Ejemplo**: modifique el formato del campo **Dirección de correo electrónico** al formato del correo electrónico.
 
-En este metamodelo personalizado, el servicio de conversión utiliza texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Dirección de correo electrónico** del formulario, el servicio de conversión convierte el campo en el formato del correo electrónico mediante la propiedad **formato**.
+En este metamodelo personalizado, el servicio de conversión usa texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Dirección de correo electrónico** del formulario, el servicio de conversión convierte el campo en el formato del correo electrónico mediante la propiedad **formato**.
 
 ```
 {
@@ -395,7 +401,7 @@ En este metamodelo personalizado, el servicio de conversión utiliza texto dentr
 
 **Ejemplo 1:** agregue una validación al **Código postal** del formulario adaptable.
 
-En este metamodelo personalizado, el servicio de conversión utiliza texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Código postal** en el formulario, el servicio de conversión agrega una validación al campo utilizando la propiedad **validatePictureClause** definida en la sección **aem:afProperties**. En función de la validación, la entrada que especifique para el campo **Código postal** en el formulario adaptable después de la conversión debe incluir seis caracteres.
+En este metamodelo personalizado, el servicio de conversión usa texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto de **Código postal** en el formulario, el servicio de conversión agrega una validación al campo mediante la propiedad **validatePictureClause** definida en la sección **aem:afProperties**. En función de la validación, la entrada que especifique para el campo **Código postal** en el formulario adaptable después de la conversión debe incluir seis caracteres.
 
 ```
 {
@@ -411,7 +417,7 @@ En este metamodelo personalizado, el servicio de conversión utiliza texto dentr
 
 **Ejemplo 2:** agregue una validación al **Número de cuenta bancaria** del formulario adaptable.
 
-En este metamodelo personalizado, el servicio de conversión utiliza texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** en el formulario, el servicio de conversión agrega una validación al campo utilizando la propiedad **mandatory** definida en la sección **aem:afProperties**. En función de la validación, debe especificar un valor para el campo **Número de cuenta bancaria** antes de enviar el formulario después de la conversión.
+En este metamodelo personalizado, el servicio de conversión usa texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Número de cuenta bancaria** en el formulario, el servicio de conversión agrega una validación al campo usando la propiedad **mandatory** definida en la sección **aem:afProperties**. En función de la validación, debe especificar un valor para el campo **Número de cuenta bancaria** antes de enviar el formulario después de la conversión.
 
 ```
 {
@@ -429,14 +435,14 @@ En este metamodelo personalizado, el servicio de conversión utiliza texto dentr
 
 **Ejemplo**: convertir el campo de tipo cadena **País** en el formulario antes de la conversión a las opciones desplegables en el formulario adaptable después de la conversión.
 
-En este metamodelo personalizado, el servicio de conversión utiliza texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **País** del formulario, el servicio de conversión convierte el campo en las siguientes opciones de lista desplegable utilizando la propiedad **enum**:
+En este metamodelo personalizado, el servicio de conversión usa texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **País** del formulario, el servicio de conversión convierte el campo en las siguientes opciones de lista desplegable utilizando la propiedad **enum**:
 
 * India
 * Inglaterra
 * Australia
 * Nueva Zelanda
 
-Las propiedades **sling:resourceType** y **guideNodeClass** asignan un campo al componente del formulario adaptable desplegable.
+Las propiedades **sling:resourceType** y **guideNodeClass** asignan un campo de formulario al componente desplegable del formulario adaptable.
 
 ```
 {
@@ -491,7 +497,7 @@ Para agregar una opción adicional, actualice la propiedad **enum** con la nueva
 
 **Ejemplo:** convertir el campo de tipo de cadena **Dirección** a un campo multilínea del formulario después de la conversión.
 
-En este metamodelo personalizado, el servicio de conversión utiliza texto dentro de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto **Dirección** del formulario, el servicio convierte el campo de texto en un campo multilínea utilizando la propiedad **multiLine** definida en la sección **aem:afProperties**.
+En este metamodelo personalizado, el servicio de conversión usa texto de **aem:affKeyword** como palabra clave de búsqueda. Después de recuperar el texto de **Address** en el formulario, el servicio convierte el campo de texto en un campo multilínea mediante la propiedad **multiLine** definida en la sección **aem:afProperties**.
 
 ```
 {

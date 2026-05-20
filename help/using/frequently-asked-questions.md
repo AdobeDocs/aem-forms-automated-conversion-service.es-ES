@@ -8,10 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 96%
+source-wordcount: 1918
+ht-degree: 94%
 
 ---
 
@@ -62,7 +68,7 @@ ht-degree: 96%
    <p>Sí, el servicio admite formularios XDP enlazados a esquema y requiere que el esquema esté incrustado en el formulario XDP de origen. Al convertir un formulario XDP enlazado a esquema, el servicio genera un esquema JSON. El esquema JSON tiene una estructura similar al esquema XSD de los formularios XDP de origen.</p> <br>
 
 1. **El servicio no pudo convertir los formularios. ¿Cuál es la razón y cómo resolver el problema?**
-Los motivos más comunes para que la conversión falle son los siguientes:</p>
+Los motivos más comunes para que la conversión falle son:</p>
    * Los formularios PDF proporcionados para la conversión están protegidos. No utilice los formularios PDF protegidos por contraseña para la conversión.
    * La conexión a internet no es estable. Asegúrese de estar conectado a internet durante la conversión.
    * El PDF de origen tiene una imagen del formulario en lugar del formulario original.
@@ -92,7 +98,7 @@ Los motivos más comunes para que la conversión falle son los siguientes:</p>
    Puede utilizar el metamodelo para asignar los objetos del formulario al componente de formulario adaptable que usted elija y configurar previamente las validaciones, las reglas, los patrones de datos, el texto de ayuda y las propiedades de accesibilidad de los componentes. Todas las propiedades especificadas se aplicarán durante la conversión. Puede utilizar el metamodelo para aplicar propiedades comunes a los campos. Esto puede ayudarle a reducir algunos problemas que se repitan en los formularios.<br/><br/>
 
 1. **¿Cuáles son las opciones para los formularios con datos confidenciales, como la información de identificación personal (PII)?**
-El servicio solo admite formularios vacíos o sin rellenar. No cargue formularios rellenados o con información de identificación personal (PII). Asimismo, quite de los formularios de origen los datos que se hayan añadido anteriormente, la información de identificación personal (PII), la confidencial y la información sujeta a derechos de propiedad. <br/>
+El servicio solo admite formularios en blanco o sin rellenar. No cargue formularios rellenados o con información de identificación personal (PII). Asimismo, quite de los formularios de origen los datos que se hayan añadido anteriormente, la información de identificación personal (PII), la confidencial y la información sujeta a derechos de propiedad. <br/>
 
 1. **¿Dónde se deben colocar los encabezados y los pies de página?**
    <p>Coloque el encabezado y el pie de página en una plantilla de formularios adaptables. Si el formulario PDF de origen ya tiene un encabezado y pie de página, el servicio los detecta y los reemplaza durante la conversión por los disponibles en la plantilla de formulario adaptable. Si algún encabezado o pie de página adicional están incluidos en el formulario adaptable, puede usar la opción <a href="review-correct-ui-edited.md">Revisar y corregir</a> para corregir o eliminar dicho encabezado o pie de página.</p> <br />
@@ -100,9 +106,9 @@ El servicio solo admite formularios vacíos o sin rellenar. No cargue formulario
 1. **¿Cuánto tiempo ahorra este servicio en comparación con el proceso manual de planificación, creación de recursos (temas, plantillas), creación y publicación de un formulario adaptable?**
    <p>La cantidad de tiempo depende del tamaño y la complejidad de los formularios de entrada y del número de solicitudes. El servicio pretende reducir significativamente el tiempo de respuesta al valor, convirtiendo a los formularios PDF en formularios adaptables a un ritmo mucho más rápido, en comparación con el proceso manual de conversión de formularios. </p> <br />
 
-1. **¿Qué debo hacer si encuentro un error relacionado con las bibliotecas RSA? El mensaje de error es similar al mensaje que se menciona a continuación:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-El error mencionado se produce cuando la delegación de arranque no está configurada para las bibliotecas RSA/BouncyCastle. Siga estos pasos para resolver el problema:
+1. **¿Qué debo hacer si encuentro un error relacionado con las bibliotecas RSA? El mensaje de error es similar al mensaje mencionado a continuación:** <br/>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+El error mencionado se produce cuando la delegación de arranque no está configurada para bibliotecas RSA/BouncyCastle. Siga estos pasos para resolver el problema:
    <p> </p>
 
    1. Detenga la instancia de AEM. Navegue hasta la carpeta `[AEM installation directory]\crx-quickstart\conf\`. Abra el archivo sling.properties para editarlo. Si usa `[AEM installation directory]\crx-quickstart\bin\start.bat` para iniciar una instancia de AEM, edite el archivo sling.properties ubicado en `[AEM_root]\crx-quickstart\`.
@@ -115,7 +121,7 @@ El error mencionado se produce cuando la delegación de arranque no está config
    <p>Se puede utilizar el editor de temáticas o estilos del formulario adaptable para cambiar el formato del campo de un formulario adaptable. Por ejemplo, puede abrir el editor de temáticas y establecer el valor de la propiedad de formato de todo el texto del formulario en mayúsculas, minúsculas o camel Case. También puede utilizar la opción sustitución de CSS en el editor de temáticas para crear distintos tipos de estilos.</p>
 
 1. **¿Puedo utilizar las etiquetas de texto de Adobe Sign con el servicio de conversión automatizada de formularios (AFCS)?**
-   <p> Cuando se utiliza el servicio de conversión automatizada de formularios (AFCS) para convertir un formulario PDF en uno adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles de la persona que firma se rellenan automáticamente. La función solo está disponible para AcroForms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
+   <p> Cuando se utiliza el servicio de conversión automatizada de formularios (AFCS) para convertir un formulario PDF en uno adaptable y el formulario PDF tiene etiquetas de texto de Adobe Sign, dichas etiquetas se convierten a los campos de formulario adaptables correspondientes y los detalles de la persona que firma se rellenan automáticamente.  La función solo está disponible para AcroForms y los formularios adaptables admiten un número limitado de campos de Adobe Sign.</p>  </br>
 
 1. **¿Cómo se crea un formulario de PDF habilitado para Adobe Sign?**
    </p>Para crear un formulario de PDF habilitado para Adobe Sign, haga lo siguiente:</p>

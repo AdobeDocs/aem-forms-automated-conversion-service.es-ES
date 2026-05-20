@@ -9,10 +9,16 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/TmEZJSIKPj6f2X5E7X8JY9AL5EGHSPuLhAzQlPdvGGM
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2397'
-ht-degree: 100%
+source-wordcount: 2555
+ht-degree: 99%
 
 ---
 
@@ -96,7 +102,7 @@ Para obtener más información sobre el servicio de conversión automatizada de 
 * [Introducción al servicio de conversión automatizada de formularios](introduction.md)
 * [Configurar el servicio de conversión automatizada de formularios](configure-service.md)
 * [Conversión de formularios impresos en formularios adaptables](convert-existing-forms-to-adaptive-forms.md)
-* [Revisión y corrección de formularios convertidos](review-correct-ui-edited.md)
+* [Revisar y corregir formularios convertidos](review-correct-ui-edited.md)
 
 La información proporcionada en este artículo se basa en la suposición de que cualquiera que la lea tiene conocimientos básicos sobre los conceptos de formularios adaptables.
 
@@ -121,7 +127,7 @@ El archivo PDF sirve como entrada al servicio de conversión automatizada de for
 
 La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Después de generar un formulario adaptable mediante el proceso de conversión, puede definir el modelo de formulario basado en un modelo de datos de formulario, XSD o un esquema JSON. Puede utilizar una base de datos, Microsoft Dynamics o cualquier otro servicio de terceros para crear un modelo de datos de formulario.
 
-Este tutorial utiliza la base de datos MySQL como fuente para crear un modelo de datos de formulario. Cree un esquema de **aplicación de préstamo** en la base de datos y añada un **solicitante** al esquema en función de los campos disponibles en el formulario adaptable.
+Este tutorial utiliza la base de datos MySQL como fuente para crear un modelo de datos de formulario. Cree un esquema de **aplicación de préstamo** en la base de datos y añada una tabla de **solicitante** al esquema en función de los campos disponibles en el formulario adaptable.
 
 ![Datos de muestra MySQL](assets/sample_data_mysql.png)
 
@@ -245,8 +251,8 @@ Caso de uso: se genera un formulario adaptable sin ningún enlace de datos utili
 
 Antes de ejecutar el caso de uso:
 
-* [Configure la base de datos MySQL como fuente de datos ](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
-* [Cree un modelo de datos de formulario](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/work-with-form-data-model.html)
+* [Configurar la base de datos MySQL como fuente de datos](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
+* [Creación del modelo de datos de formulario](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
 En función del caso de uso, cree el modelo de datos de formulario **aplicación de préstamo** y enlace el argumento de servicio de lectura al valor **[!UICONTROL Literal]**. El valor literal del número de teléfono debe ser de uno de los registros configurados en el esquema **solicitante** de la base de datos MySQL. Los servicios utilizan el valor como argumento para recuperar detalles de la fuente de datos. También puede seleccionar el [Atributo de perfil de usuario o atributo de solicitud](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) de la lista desplegable **[!UICONTROL Binding To]**.
 
@@ -259,7 +265,7 @@ En función del caso de uso, cree el modelo de datos de formulario **aplicación
 Siga estos pasos:
 
 1. Seleccione el **formulario de solicitud de préstamo de ejemplo** convertido disponible en la carpeta **[!UICONTROL output]** y toque **[!UICONTROL Properties]**.
-1. Desde la pestaña **[!UICONTROL Form Model]**, seleccione **[!UICONTROL Form Data Model]** desde la lista desplegable **[!UICONTROL Select From]** y pulse **[!UICONTROL Select Form Data Model]** para seleccionar el modelo de datos del formulario **aplicación de préstamo**. Toque **[!UICONTROL Save & Close]** para guardar el formulario.
+1. Desde la pestaña **[!UICONTROL Form Model]**, seleccione **[!UICONTROL Form Data Model]** desde la lista desplegable **[!UICONTROL Select From]** y pulse **[!UICONTROL Select Form Data Model]** para seleccionar el modelo de datos de formulario **aplicación de préstamo**. Toque **[!UICONTROL Save & Close]** para guardar el formulario.
 1. Seleccione el **formulario de solicitud de préstamo de ejemplo** y toque **[!UICONTROL Edit]**.
 1. En la pestaña **[!UICONTROL Content]**, pulse el icono configurar:
 
@@ -339,9 +345,9 @@ Siga estos pasos:
 
    En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y presione ![icono Listo](assets/save_icon.svg) para guardar las propiedades. Del mismo modo, cree un enlace de datos para los campos **Dirección**, **Número de teléfono**, **Correo electrónico**, **Ocupación**, **Salario anual (en dólares)** y **cantidad de familiares dependientes** con las entidades del esquema JSON.
 
-1. Seleccione nuevamente el **formulario de solicitud de préstamo de ejemplo** convertido disponible en la carpeta **[!UICONTROL output]** y presione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Seleccione el **formulario de solicitud de préstamo de ejemplo** convertido disponible en la carpeta **[!UICONTROL output]** de nuevo y presione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
-   Descargar archivo de datos de ejemplo</br>
+   Descargar archivo de datos de muestra</br>
 
    [Obtener archivo](assets/json_data_file.txt)</br>
 
@@ -368,7 +374,7 @@ En el campo Referencia de enlace, seleccione **Solicitante** > **Nombre** y pres
 
 1. Seleccione nuevamente el **formulario de solicitud de préstamo de ejemplo** convertido disponible en la carpeta **salida** y presione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
-   Descargar archivo de datos de ejemplo</br>
+   Descargar archivo de datos de muestra</br>
 
    [Obtener archivo](assets/loan-application-data-xml-data.zip)</br>
 
@@ -393,7 +399,7 @@ Siga estos pasos:
 
 1. Seleccione el **formulario de solicitud de préstamo de ejemplo** convertido disponible en la carpeta **[!UICONTROL output]** de nuevo y presione **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
 
-   Descargar archivo de datos de ejemplo</br>
+   Descargar archivo de datos de muestra</br>
 
    [Obtener archivo](assets/loan_application_data_source_json_data_binding.txt)</br>
 
