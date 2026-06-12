@@ -144,7 +144,7 @@ El metamodelo admite las siguientes propiedades comunes de esquema JSON para los
    <th><strong>Descripción</strong></th> 
   </tr> 
   <tr> 
-   <td><p>título</p></td> 
+   <td><p>Título</p></td> 
    <td> 
     <p>El texto mencionado dentro de la propiedad Título en un metamodelo sirve como palabra clave de búsqueda para realizar acciones en los campos de formulario adaptables generados. Por ejemplo, modificar la etiqueta de un campo de formulario adaptable. Para obtener más información, consulte <strong>Modificación de la etiqueta de un campo del formulario</strong> en <a href="#custommetamodelexamples">Ejemplos de metamodelos personalizados.</a></p> </td> 
   </tr>
@@ -162,7 +162,7 @@ El metamodelo admite las siguientes propiedades comunes de esquema JSON para los
      <li>Booleano: genera un componente de formulario adaptable de conmutación.</li>
      </ul><p>Para obtener más información sobre el uso de la propiedad tipo en un metamodelo, consulte <strong>Modificación del tipo de campo de formulario</strong> en <a href="#custommetamodelexamples">Ejemplos de metamodelos personalizados.</a></p></td> 
   </tr>
-  <td><p>pattern</p></td> 
+  <td><p>patrón</p></td> 
    <td> 
     <p>La propiedad patrón restringe el valor del campo de formulario adaptable generado en función de una expresión regular. Por ejemplo, el siguiente código del metamodelo restringe el valor del campo de formulario adaptable generado a diez dígitos: <br>"pattern": "/\\d{10}/"<br>Del mismo modo, el siguiente código del metamodelo restringe el valor de un campo a un formato de fecha específico.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
   </tr>
