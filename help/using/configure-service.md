@@ -9,29 +9,15 @@ role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 TQID: https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-  - id: a1df6763-63b5-45b4-8c8a-155a692a2b3e
-  - id: ae478996-b206-4712-9b0c-dc78a2644453
-  - id: d49d6117-dd89-469c-a774-cc96b7eee433
-  - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: a1df6763-63b5-45b4-8c8a-155a692a2b3eid: ae478996-b206-4712-9b0c-dc78a2644453id: d49d6117-dd89-469c-a774-cc96b7eee433id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: cb6b167400093c85e8929eb147e2a0be256772a6
 workflow-type: tm+mt
-source-wordcount: 2663
-ht-degree: 81%
+source-wordcount: 2448
+ht-degree: 75%
 
 ---
 
@@ -93,7 +79,7 @@ El servicio de conversión automatizada de formularios (AFCS) se ejecuta en la i
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de servicio más reciente de AEM {#servicepack}
 
-Descargue e instale el paquete de servicio de AEM más reciente. Para obtener instrucciones de instalación, consulte las [Notas de la versión del Service Pack de AEM 6.5](https://helpx.adobe.com/es/experience-manager/6-5/release-notes/sp-release-notes.html).
+Descargue e instale el paquete de servicio de AEM más reciente. Para obtener instrucciones de instalación, consulte las [Notas de la versión del Service Pack de AEM 6.5](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Solo para AEM 6.5 y AEM 6.5 LTS) Descargue e instale el paquete de complementos de AEM Forms  {#downloadaemformsaddon}
 
@@ -114,7 +100,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** Puede usar las plantillas predeterminadas o crear plantillas personalizadas y apuntarles [configuración del servicio](#configure-the-cloud-service).
 
-**(solo para AEM 6.5 y AEM 6.5 LTS)** El servicio de conversión automatizada de formularios (AFCS) requiere al menos una temática y una plantilla para convertir un formulario de PDF en un formulario adaptable. Debe [habilitar los componentes principales de los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea usar plantillas y temáticas basadas en los componentes principales; las instrucciones se documentan allí. Si inicia AEM 6.5 o AEM 6.5 LTS en [modo de producción](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no se instalan. Cree una temática personalizada y una plantilla propia, o descargue e instale el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en la instancia de autor para obtener temáticas de referencia y plantillas. A continuación, señale [configuración del servicio](#configure-the-cloud-service) para usar las plantillas y los temas antes de usar el servicio.
+**(solo para AEM 6.5 y AEM 6.5 LTS)** El servicio de conversión automatizada de formularios (AFCS) requiere al menos una temática y una plantilla para convertir un formulario de PDF en un formulario adaptable. Debe [habilitar los componentes principales de los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=es) si desea usar plantillas y temáticas basadas en los componentes principales; las instrucciones se documentan allí. Si inicia AEM 6.5 o AEM 6.5 LTS en [modo de producción](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (modo de ejecución nosamplecontent), los paquetes de referencia no se instalan. Cree una temática personalizada y una plantilla propia, o descargue e instale el paquete [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) en la instancia de autor para obtener temáticas de referencia y plantillas. A continuación, señale [configuración del servicio](#configure-the-cloud-service) para usar las plantillas y los temas antes de usar el servicio.
 
 ## Configuración del acceso y los permisos
 
@@ -132,8 +118,8 @@ Antes de proceder a configurar el servicio y conectar su instancia con el servic
 
 Una vez que Adobe habilita el acceso para su organización y proporciona los privilegios necesarios al administrador, este puede iniciar sesión en Admin Console (instrucciones detalladas a continuación), crear un perfil y agregar desarrolladores. Los desarrolladores pueden conectar una instancia de AEM Forms al servicio de conversión automatizada de formularios (AFCS) en Adobe Cloud.
 
-Los desarrolladores son miembros de su organización que están designados para ejecutar el servicio de conversión. Solo aquellos desarrolladores que se añaden al perfil del servicio de conversión automatizada de formularios (AFCS) de Adobe tienen derecho a utilizarlo.
-Realice los pasos siguientes para crear un perfil y agregarle desarrolladores. Se requiere un perfil como mínimo para conceder el acceso necesario a los desarrolladores de su organización
+Los desarrolladores son miembros de la organización designados para ejecutar el servicio de conversión. Solo los desarrolladores que se agregan al perfil del Servicio de conversión automatizada de formularios (AFCS) de Adobe pueden utilizar el servicio de conversión automatizada de formularios (AFCS).
+Realice los siguientes pasos para crear un perfil y agregarle desarrolladores. Se requiere un mínimo de un perfil para conceder el acceso necesario a los desarrolladores de su organización:
 
 1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/). Use el **Adobe ID** del administrador suministrado para utilizar el servicio de conversión automatizada de formularios (AFCS) para iniciar sesión.
 1. Haga clic en la opción **[!UICONTROL Automated Forms Conversion]**.
@@ -166,7 +152,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=es#sending-email).
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 -->
 
 ### Adición de usuarios a grupos de usuarios de los formularios {#adduserstousergroup}
@@ -189,7 +175,7 @@ Especifique una dirección de correo electrónico en el perfil de AEM del usuari
 
 ## Conexión de la instancia de AEM Forms al servicio de conversión automatizada de formularios (AFCS) en Adobe Cloud
 
-Después de que un administrador le proporcione acceso como desarrollador, puede conectar su instancia de AEM Forms al servicio de conversión automatizada de formularios (AFCS) que se ejecuta en Adobe Cloud.
+Una vez que un administrador le proporciona acceso de desarrollador, puede conectar su instancia de AEM Forms al servicio de conversión automatizada de formularios (AFCS) que se ejecuta en Adobe Cloud.
 Siga estos pasos para conectar la instancia de AEM Forms al servicio de conversión automatizada de formularios:
 
 [&#x200B;1. Configuración de las API de servicio en Adobe Developer Console](#configure-the-service-apis-on-adobe-developer-console)
@@ -200,7 +186,7 @@ Siga estos pasos para conectar la instancia de AEM Forms al servicio de conversi
 
 ### &#x200B;1. Configuración de las API de servicio en Adobe Developer Console
 
-Para utilizar el servicio de conversión automatizada de formularios (AFCS) cree un proyecto y añada la API del **servicio de configuración automatizada de formularios** al proyecto en Adobe Developer Console. La integración genera la clave de API, el secreto del cliente, el ID de cuenta técnica, los ámbitos y el ID de organización.
+Para usar el servicio de conversión automatizada de formularios (AFCS), cree un proyecto y agregue la API **Servicio de configuración automatizada de Forms** al proyecto en Adobe Developer Console. La integración genera la clave de API, el secreto del cliente, el ID de cuenta técnica, los ámbitos y el ID de organización.
 Para configurar la API del servicio de conversión automatizada de formularios en Adobe Developer Console, realice los siguientes pasos:
 
 1. Inicie sesión en https://developer.adobe.com/console . Utilice su cuenta de desarrollador de Adobe ID que el administrador haya aprovisionado para iniciar sesión en la consola de Adobe I/O.
@@ -209,7 +195,7 @@ Para configurar la API del servicio de conversión automatizada de formularios e
 
    ![Crear nuevo proyecto de API](/help/using/assets/create-new-api-project.png)
 
-1. Haga clic en **[!UICONTROL Add API]**. Aparece una pantalla con una lista de todas las API habilitadas para su cuenta.
+1. Haga clic en **[!UICONTROL Add API]**. Aparece una pantalla con la lista de todas las API habilitadas para su cuenta.
    ![Añadir API](/help/using/assets/add-api.png)
 
 1. Seleccione **[!UICONTROL Automated Forms Conversion service]** y haga clic en **[!UICONTROL Next]**. Aparece una pantalla para configurar la API.
@@ -265,7 +251,7 @@ Inicie sesión en la instancia de autor para crear las configuraciones de IMS de
    >
    > Cree solo una configuración IMS. No cree más de una.
 
-1. Seleccione la **configuración de IMS de Adobe** y haga clic en **[!UICONTROL Check Health]**. Aparece un cuadro de diálogo.
+1. Seleccione la **configuración de Adobe IMS** y haga clic en **[!UICONTROL Check Health]**. Aparecerá un cuadro de diálogo.
    ![Comprobar estado](/help/using/assets/check-health.png)
 
    Aparece un cuadro de diálogo **Comprobar**.
@@ -276,18 +262,18 @@ Inicie sesión en la instancia de autor para crear las configuraciones de IMS de
 
    Cuando la conexión se realiza correctamente, aparece el mensaje *Token recuperado correctamente*.
 
-   ![Cuando la conexión se realiza correctamente, aparece el mensaje Token recuperado correctamente. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Cuando la conexión se realiza correctamente, aparece el mensaje Token recuperado correctamente. ](/help/using/assets/healthy-dialog.png)
 
 1. Haga clic en **Cerrar**.
 
 ### &#x200B;3. Crear configuración de la conversión automatizada de formularios
 
-Cree una configuración de la conversión automatizada de formularios para conectar la instancia de AEM al servicio de conversión. También le permite especificar una plantilla, un tema y fragmentos de formulario para una conversión. Puede crear varias configuraciones de servicios en la nube por separado para cada conjunto de formularios.
-Por ejemplo, puede tener una configuración independiente para los formularios del departamento de ventas y otra para los de asistencia al cliente. Siga estos pasos para crear la configuración del servicio en la nube:
+Cree una configuración de conversión automatizada de formularios para conectar la instancia de AEM al servicio de conversión. También permite especificar una plantilla, una temática y fragmentos de formulario para una conversión. Puede crear varias configuraciones de servicio en la nube independientes para cada conjunto de formularios.
+Por ejemplo, puede tener una configuración independiente para los formularios del departamento de ventas y otra independiente para los formularios de asistencia al cliente. Siga estos pasos para crear una configuración de servicio en la nube:
 
 1. En la instancia de AEM Forms, haga clic en **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**.
 1. Seleccione la carpeta **[!UICONTROL Global]** y haga clic en **[!UICONTROL Create]**.
-Aparece la página para **Crear la configuración de la conversión automatizada de formularios**. La configuración se crea en la carpeta **Global**. También puede crear la configuración en una carpeta diferente que ya exista o crear una para las configuraciones.
+Aparecerá la página para **Crear configuración de conversión automatizada de formularios**. La configuración se ha creado en la carpeta **Global**. También puede crear la configuración en una carpeta diferente que exista o crear una carpeta para las configuraciones.
    ![Seleccionar carpeta Global](/help/using/assets/create-afcs-cloud-conf.png)
 1. En la página **[!UICONTROL Create Automated Forms Conversion Configuration]**, especifique el valor de los campos siguientes y haga clic en **[!UICONTROL Next]**.
 
