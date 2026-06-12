@@ -19,8 +19,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: 1905
-ht-degree: 83%
+source-wordcount: 1790
+ht-degree: 80%
 
 ---
 
@@ -79,9 +79,9 @@ Después de cargar los formularios y configurar el servicio, siga estos pasos pa
 
    * **[!UICONTROL Select a cloud configuration]**. Al seleccionar una configuración, ya se han especificado la plantilla y temática predeterminadas. Si es necesario, puede definir una plantilla o una temática diferentes.
    * Especifique una ubicación para guardar los formularios adaptables generados y el esquema correspondiente. Puede utilizar rutas predeterminadas o especificar rutas personalizadas.
-   * Utilice la opción **Generar formularios adaptables sin enlaces de modelo de datos** si desea generar un formulario adaptable con o sin enlaces de modelo de datos.
+   * Utilice la opción **Generar formularios adaptables sin enlaces del modelo de datos** para seleccionar si desea generar un formulario adaptable con o sin enlaces del modelo de datos.
 Si no selecciona esta opción, el servicio de conversión asocia automáticamente los formularios adaptables con un esquema JSON y crea un enlace de datos entre los campos disponibles en el formulario adaptable y el esquema JSON. El campo **[!UICONTROL Save generated data model schema at]** muestra la ubicación predeterminada para guardar el esquema JSON generado. También puede personalizar la ubicación para guardar el esquema generado.
-Si selecciona esta opción, el servicio de conversión genera un formulario adaptable sin enlaces de modelo de datos. Después de una conversión correcta, puede asociar un formulario adaptable a un modelo de datos de formulario, un esquema XML o JSON. Para obtener más información, consulte [Creación de un formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+Si selecciona esta opción, el servicio de conversión genera un formulario adaptable sin enlaces del modelo de datos. Después de una conversión correcta, puede asociar un formulario adaptable con un modelo de datos de formulario, un esquema XML o un esquema JSON. Para obtener más información, consulte [Crear un formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
 
@@ -138,7 +138,7 @@ Si selecciona esta opción, el servicio de conversión genera un formulario adap
 
   >[!NOTE]
   > No utilice plantillas de diseño adaptables mientras utiliza la opción Conversión automática de secciones a fragmentos.
-  > Utilice el editor de revisiones y correcciones para combinar paneles pequeños con uno grande. Ayuda a reducir el número de fragmentos en el formulario adaptable convertido.
+  > Utilice el editor de revisión y corrección para combinar paneles pequeños con uno grande. Ayuda a reducir el número de fragmentos del formulario adaptable convertido.
   > Si experimenta la excepción “demasiadas llamadas”,
   >
   > * reestructure el formulario para crear una jerarquía simplificada
