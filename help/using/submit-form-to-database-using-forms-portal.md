@@ -6,8 +6,8 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 95%
+source-wordcount: '1188'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ La siguiente figura muestra las distintas etapas de integración de un formulari
 
 En este artículo se describen las instrucciones paso a paso para ejecutar correctamente todas estas etapas de integración.
 
-El ejemplo que se analiza en este artículo es una implementación de referencia de servicios personalizados de metadatos y datos para integrar una página del Portal de formularios con una base de datos. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar la página del Portal de formularios con cualquier base de datos de su elección.
+El ejemplo que se analiza en este artículo es una implementación de referencia de servicios personalizados de metadatos y datos para integrar una página del Portal de formularios con una base de datos. La base de datos utilizada en la implementación de ejemplo es MySQL 5.6.24. Sin embargo, puede integrar la página del portal de Forms con cualquier base de datos de su elección.
 
 ## Requisitos previos {#pre-requisites}
 
@@ -32,7 +32,7 @@ El ejemplo que se analiza en este artículo es una implementación de referencia
 * Instalar el [Service pack más reciente](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) para la instancia de AEM
 * Última versión del paquete de complementos de AEM Forms
 * Configurar el [servicio de conversión automatizada de formularios (AFCS)](configure-service.md)
-* Configure una base de datos. La base de datos utilizada en la implementación de muestra es MySQL 5.6.24. Sin embargo, puede integrar el formulario adaptable convertido con cualquier base de datos de su elección.
+* Configure una base de datos. La base de datos utilizada en la implementación de ejemplo es MySQL 5.6.24. Sin embargo, puede integrar el formulario adaptable convertido con cualquier base de datos de su elección.
 
 ## Configuración de la conexión entre la instancia de AEM y la base de datos {#set-up-connection-aem-instance-database}
 
@@ -269,7 +269,7 @@ Realice los siguientes pasos en todas las instancias de autor y publicación par
 
 1. Descargue el siguiente paquete **aem-fp-db-integration-sample-pkg-6.1.2.zip** en su sistema de archivos.
 
-[Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Vaya a al Administrador de paquetes de AEM en *http://[host]:[port]/crx/packmgr/*.
 1. Haga clic en **[!UICONTROL Upload Package]**.
