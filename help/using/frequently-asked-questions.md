@@ -8,28 +8,40 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+TQID: 'https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 1830
+source-wordcount: '1917'
 ht-degree: 94%
-
 ---
-
 # Preguntas frecuentes{#frequently-asked-questions}
 
 1. **¿Qué versión de AEM Forms es compatible con el servicio de conversión automatizada de formularios (AFCS)?**
@@ -76,15 +88,15 @@ ht-degree: 94%
 1. **¿Admite el servicio los formularios XDP enlazados con esquema? Si tengo un XDP enlazado a un esquema, ¿necesito incrustar el esquema a XDP?**
    <p>Sí, el servicio admite formularios XDP enlazados a esquema y requiere que el esquema esté incrustado en el formulario XDP de origen. Al convertir un formulario XDP enlazado a esquema, el servicio genera un esquema JSON. El esquema JSON tiene una estructura similar al esquema XSD de los formularios XDP de origen.</p> <br>
 
-1. **El servicio no ha podido convertir formularios. ¿Cuál es el motivo y cómo resolver el problema?**
+1. **El servicio no pudo convertir los formularios. ¿Cuál es la razón y cómo resolver el problema?**
 Los motivos más comunes para que la conversión falle son:</p>
    * Los formularios PDF proporcionados para la conversión están protegidos. No utilice los formularios PDF protegidos por contraseña para la conversión.
    * La conexión a internet no es estable. Asegúrese de estar conectado a internet durante la conversión.
    * El PDF de origen tiene una imagen del formulario en lugar del formulario original.
    * El servicio está configurado incorrectamente, no se proporciona la dirección URL del servicio o esta es incorrecta. Compruebe la [configuración del servicio](configure-service.md#configure-the-cloud-service) en **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
    * La configuración de IMS no está configurada correctamente. Compruebe el estado de la configuración de IMS para asegurarse de que funcione correctamente. Para comprobar si la configuración de IMS es correcta o no, haga lo siguiente:
-      1. Vaya a `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Seleccione la configuración. Haga clic en **[!UICONTROL Check Health]** del encabezado y en **[!UICONTROL Check]**. Si tiene éxito, obtendrá el siguiente mensaje **[!UICONTROL Token retrieved successfully!]**. <br> <br>
+     1. Vaya a `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
+     2. Seleccione la configuración. Haga clic en **[!UICONTROL Check Health]** del encabezado y en **[!UICONTROL Check]**. Si tiene éxito, obtendrá el siguiente mensaje **[!UICONTROL Token retrieved successfully!]**. <br> <br>
 
 1. **¿Afecta el uso de fuentes personalizadas a la conversión?**
    <p>Cuando un formulario PDF no interactivo se convierte en uno adaptable, para mejorar la calidad de la conversión, las fuentes se incrustan en el formulario PDF. La compatibilidad con la incrustación de fuentes está restringida a los formularios PDF no interactivos. Para optimizar la conversión de los formularios PDF basados en AcroForm y en XFA, se utilizan fuentes de reserva.</p> 
@@ -106,8 +118,8 @@ Los motivos más comunes para que la conversión falle son:</p>
 
    Puede utilizar el metamodelo para asignar los objetos del formulario al componente de formulario adaptable que usted elija y configurar previamente las validaciones, las reglas, los patrones de datos, el texto de ayuda y las propiedades de accesibilidad de los componentes. Todas las propiedades especificadas se aplicarán durante la conversión. Puede utilizar el metamodelo para aplicar propiedades comunes a los campos. Esto puede ayudarle a reducir algunos problemas que se repitan en los formularios.<br/><br/>
 
-1. **¿Cuáles son las opciones de los formularios con datos confidenciales, como información de identificación personal (PII)?**
-El servicio solo admite formularios en blanco o sin rellenar. No cargue formularios ni formularios rellenados con información de identificación personal (PII). Además, elimine los datos precargados, la información de identificación personal (PII), la información confidencial y la información de propiedad en los formularios de origen. <br/>
+1. **¿Cuáles son las opciones para los formularios con datos confidenciales, como la información de identificación personal (PII)?**
+El servicio solo admite formularios en blanco o sin rellenar. No cargue formularios rellenados o con información de identificación personal (PII). Asimismo, quite de los formularios de origen los datos que se hayan añadido anteriormente, la información de identificación personal (PII), la confidencial y la información sujeta a derechos de propiedad. <br/>
 
 1. **¿Dónde se deben colocar los encabezados y los pies de página?**
    <p>Coloque el encabezado y el pie de página en una plantilla de formularios adaptables. Si el formulario PDF de origen ya tiene un encabezado y pie de página, el servicio los detecta y los reemplaza durante la conversión por los disponibles en la plantilla de formulario adaptable. Si algún encabezado o pie de página adicional están incluidos en el formulario adaptable, puede usar la opción <a href="review-correct-ui-edited.md">Revisar y corregir</a> para corregir o eliminar dicho encabezado o pie de página.</p> <br />
@@ -115,9 +127,9 @@ El servicio solo admite formularios en blanco o sin rellenar. No cargue formular
 1. **¿Cuánto tiempo ahorra este servicio en comparación con el proceso manual de planificación, creación de recursos (temas, plantillas), creación y publicación de un formulario adaptable?**
    <p>La cantidad de tiempo depende del tamaño y la complejidad de los formularios de entrada y del número de solicitudes. El servicio pretende reducir significativamente el tiempo de respuesta al valor, convirtiendo a los formularios PDF en formularios adaptables a un ritmo mucho más rápido, en comparación con el proceso manual de conversión de formularios. </p> <br />
 
-1. **¿Qué hacer si encuentro un error relacionado con bibliotecas RSA? El mensaje de error es similar al mensaje mencionado a continuación:** <br/>
+1. **¿Qué debo hacer si encuentro un error relacionado con las bibliotecas RSA? El mensaje de error es similar al mensaje mencionado a continuación:** <br/>
    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-El error mencionado se produce cuando la delegación de arranque no está configurada para bibliotecas RSA/BouncyCastle. Siga estos pasos para resolver el problema:
+   El error mencionado se produce cuando la delegación de arranque no está configurada para bibliotecas RSA/BouncyCastle. Siga estos pasos para resolver el problema:
    <p> </p>
 
    1. Detenga la instancia de AEM. Navegue hasta la carpeta `[AEM installation directory]\crx-quickstart\conf\`. Abra el archivo sling.properties para editarlo. Si usa `[AEM installation directory]\crx-quickstart\bin\start.bat` para iniciar una instancia de AEM, edite el archivo sling.properties ubicado en `[AEM_root]\crx-quickstart\`.

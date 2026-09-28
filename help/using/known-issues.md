@@ -8,27 +8,38 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-TQID: https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA
+TQID: 'https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 871
+source-wordcount: '871'
 ht-degree: 95%
-
 ---
-
 # Problemas conocidos y limitaciones {#known-issues-limitations}
 
 Antes de empezar a utilizar el servicio de conversión automatizada de formularios (AFCS) de AEM Forms, revise los siguientes problemas y limitaciones conocidos:
@@ -39,19 +50,19 @@ Antes de empezar a utilizar el servicio de conversión automatizada de formulari
 * Algunos objetos de formulario son fácilmente visibles para las personas, pero [difíciles de identificar para el servicio](styles-and-pattern-considerations-and-best-practices.md). Use el [editor Revisar y corregir](review-correct-ui-edited.md) para identificar y convertir dichos objetos de formulario.
 * Editor Revisar y corregir:
 
-   * No tiene la acción Deshacer. El botón Guardar guarda los cambios de forma permanente.
-   * No admite paneles repetibles para formularios basados en XFA.
-   * Si modifica la lista de una tabla con el editor Revisar y corregir, la anchura de la fila no se ajusta automáticamente y el texto puede pasar a la siguiente fila.
-   * La característica **[!UICONTROL Auto-detect multi-column layout from input forms]** no funciona con el editor Revisar y corregir ni los fragmentos de formulario.
-   * La firma manuscrita creada con el editor Revisar y corregir no se carga en los formularios adaptables publicados.
+  * No tiene la acción Deshacer. El botón Guardar guarda los cambios de forma permanente.
+  * No admite paneles repetibles para formularios basados en XFA.
+  * Si modifica la lista de una tabla con el editor Revisar y corregir, la anchura de la fila no se ajusta automáticamente y el texto puede pasar a la siguiente fila.
+  * La característica **[!UICONTROL Auto-detect multi-column layout from input forms]** no funciona con el editor Revisar y corregir ni los fragmentos de formulario.
+  * La firma manuscrita creada con el editor Revisar y corregir no se carga en los formularios adaptables publicados.
 
 
 * Respecto de los formularios basados en XFA:
-   * No se admite la extracción de fragmentos de un formulario basado en XFA.
-   * Los scripts XFA no son compatibles. Por ejemplo, los scripts para la generación automática de valores para un componente desplegable.
-   * El metamodelo no funciona para el grupo de elección.
-   * No se identifica la opción Grupos de elección con un solo carácter.
-   * Cuando el documento de origen es un XFA dinámico (.XDP) y [define el comportamiento de las propiedades XFA en un formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), no se respeta la propiedad de presencia del documento de origen. Por ejemplo, un campo del documento de origen se marca como oculto y un script hace que sea visible. Entonces, permanece visible en el formulario adaptable de salida.
+  * No se admite la extracción de fragmentos de un formulario basado en XFA.
+  * Los scripts XFA no son compatibles. Por ejemplo, los scripts para la generación automática de valores para un componente desplegable.
+  * El metamodelo no funciona para el grupo de elección.
+  * No se identifica la opción Grupos de elección con un solo carácter.
+  * Cuando el documento de origen es un XFA dinámico (.XDP) y [define el comportamiento de las propiedades XFA en un formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), no se respeta la propiedad de presencia del documento de origen. Por ejemplo, un campo del documento de origen se marca como oculto y un script hace que sea visible. Entonces, permanece visible en el formulario adaptable de salida.
 
 * Al usar la opción **Utilizar un AcroForm de entrada como documento de registro (DoR) para los formularios adaptables generados**, considere lo siguiente:
 
