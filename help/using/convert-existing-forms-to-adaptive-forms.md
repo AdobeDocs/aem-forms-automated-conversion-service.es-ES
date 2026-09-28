@@ -133,7 +133,7 @@ Después de cargar los formularios y configurar el servicio, siga estos pasos pa
    >[!NOTE]
    >
    >
-   > * Solo puede usar las opciones **[!UICONTROL  Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** a la vez. No puede utilizar ambas opciones simultáneamente.
+   > * Solo puede usar las opciones **[!UICONTROL &#x200B; Extract Fragment]** o **[!UICONTROL Use existing adaptive form fragments]** a la vez. No puede utilizar ambas opciones simultáneamente.
    > * Puede usar la opción **[!UICONTROL Use existing adaptive form fragments]** solo con formularios PDF no interactivos. Otros tipos de formulario aún no son compatibles.
    > * Solo puede utilizar fragmentos independientes o enlazados a un esquema JSON con el servicio de conversión automatizada. No utilice fragmentos XFA. Los fragmentos XFA no son compatibles.
    >
