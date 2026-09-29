@@ -8,28 +8,40 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
+TQID: 'https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2659
+source-wordcount: '2659'
 ht-degree: 81%
-
 ---
-
 # Ampliación del metamodelo predeterminado {#extend-the-default-meta-model}
 
 El servicio de conversión automatizada de formularios (AFCS) identifica y extrae objetos de los formularios de origen. El asignador semántico ayuda al servicio a decidir cómo se representan los objetos extraídos en un formulario adaptable. Por ejemplo, un formulario de origen puede tener muchos tipos de representaciones de una fecha. El asignador semántico asigna todas las representaciones de los objetos de formulario de fecha del formulario de origen con el componente de fecha de los formularios adaptables. El asignador semántico también permite que el servicio preconfigure y aplique validaciones, reglas, patrones de datos, texto de ayuda y propiedades de accesibilidad a los componentes de formulario adaptables durante la conversión.
@@ -256,12 +268,12 @@ Cuando no se especifica ningún idioma, el servicio considera que el metamodelo 
 * Asegúrese de que el nombre de cada clave esté en inglés. Por ejemplo, emailAddress.
 * Asegúrese de que todas las referencias de entidad y los valores predefinidos de todas las claves de ID solo contengan caracteres ASCII. Por ejemplo, &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
 * Asegúrese de que todos los valores correspondientes a las claves siguientes estén en el idioma del metamodelo especificado:
-   * aem:affKeyword
-   * título
-   * descripción
-   * enumNames
-   * shortDescription
-   * validatePictureClauseMessage
+  * aem:affKeyword
+  * título
+  * descripción
+  * enumNames
+  * shortDescription
+  * validatePictureClauseMessage
 
   Por ejemplo, cuando el idioma del metamodelo sea francés (&quot;aem:Language&quot;: &quot;fr&quot;), asegúrese de que todas las descripciones y mensajes estén en francés.
 
@@ -277,7 +289,7 @@ Su organización puede tener otros patrones y validaciones, además de los que a
 
 El servicio de conversión automatizada de formularios (AFCS) utiliza un metamodelo predeterminado guardado en la siguiente ubicación para asignar campos de formulario de origen a los campos de formularios adaptables durante la conversión:
 
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
+http://<server>:<port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
 Sin embargo, puede guardar un metamodelo personalizado en una carpeta y modificar las propiedades del servicio de conversión para utilizar el metamodelo personalizado durante la conversión.
 
